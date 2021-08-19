@@ -1,0 +1,101 @@
+BLINTER AIO SECURITY
+
+
+V 1.6.0
+se ponen animaciones en los iconos de interface para que el cursor se vuelva mano.
+se pone en acerca de los logos de marca andago y velosergio.
+detalles de software se modifica, de un txt a una ventana de dialogo.
+
+
+
+
+V 1.5.0
+cambios
+
+se cambia color de fondo a gris #6B626F
+se definen formato para titulos
+	Fuente: Franklin Gothic
+	Estilo:	Seminegrita
+	Tamaño 20
+	antialias check 
+	script occidental
+	Color #FFFFFF
+se define formato para parrafos
+Fuente: Bahnschrift
+	Estilo:	Condensed
+	Tamaño 12
+	antialias check 
+	script occidental
+	Color #FFFFFF
+
+se añade pack de iconos para botones adelante atras
+Iconos diseñados por <a href="https://www.flaticon.es/autores/srip" title="srip">srip</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+
+
+
+
+
+se añaden pack de iconos para tipos de archivos.
+Iconos diseñados por <a href="https://www.flaticon.es/autores/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+
+
+
+se crea dialogo acercade para poner la version del software y los creditos
+
+
+
+V 1.3.0
+Cambios.
+se añade en menu opcion de online
+se crea pagina online y se añaden eset y panda.
+se crea archivo antivirus para poner el listado de software
+
+
+V 1.2.0
+Definicion de Software
+
+- Malwarebytes
+clamwin
+emisoft emergency kit
+spybot search y destroy
+vipre rescue
+
+cambios
+- Cambio de color a naranja.
+- en menu se crea lista de portables y ejecutables
+- se añaden las paginas ejecutables y portables
+- se añade detalles de software para conocer de antemano las versiones y fechas de prueba.
+
+
+V 1.1.0
+
+Definicion de Software
+- Kaspersky VRT
+- Norton PE
+- Microsoft Safety Scan
+
+Cambios
+- Cambios de color general.
+- Pagina Riesgos tiene un select de radio para decidir si se aceptan los riesgos o no.
+- se añaden logos en formato png para mejor visualizacion
+- boton salir.
+
+
+V 1.0.0
+
+Definicion de Software.
+todo el software añadido es provado previamente.
+- autoplay media studio 8 
+- Adwcleaner
+- HijackThis
+- McAfee Stinger
+- Nobot
+- Hitman Pro
+
+Cambios
+
+- se crea Pagina Bienvenida donde se da una introduccion del AIO
+- Se crea pagina Riesgos para que el usuario sea consiente que se pueden tener riesgos.
+- Menu se añaden imagenes de los aplicativos para su ejecucion.
+- se crea archivo readme
+- se crea archivo changelog

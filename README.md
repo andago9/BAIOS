@@ -1,9 +1,16 @@
 # BAIOS
+Blinter AIO Security
 
 Que es BAIOS?
 -----------------------------
 
-Blinter Antivirus es la recopilacion de ciertos antivirus de uso gratuito para que sean utilizados por el usuario
+Blinter All In One Security o BAIOS es una recopilación de antivirus y utilidades tanto 
+portables, instalables como ejecutables que a criterio del equipo programador cumplen 
+con unos criterios para ser tenidos en cuenta en este AIO, los programas son de uso 
+gratuito y su uso debe ser bajo su propia responsabilidad, ya que algunos virus, malwares
+ o similares se pueden alojar en archivos del sistema o en caso dado pueden ser escaneados
+ como un falso positivo, por lo cual se aconseja no eliminar archivos hasta estar seguros 
+ de que pueda hacerlo y no ocasionar un daño irreversible a su sistema.
 
 
 Requerimientos?
@@ -14,7 +21,7 @@ HARDWARE
 
 Minimo
 
-			- 2 GB RAM
+			- 1 GB RAM
 			- 4 GB HD
 			- Procesador de 2 núcleos a 1,6 GHz
 
@@ -28,57 +35,38 @@ Recomendado
 SOFTWARE
 -----------------
 
-Minimo:
+Algunos aplicativos pueden requerir la instalacion previa de algun complemento o frameworks 
+pero en general se intenta que no sea solicitado ninguno.
 
-			- Microsoft Office 2013
-			- MySQL Server 8.0
-			- Microsoft windows 7
-			- Microsoft .NET Framework 4
-			- Arquitectura x86
-			
-Recomendado
-			- Microsoft Office 2019
-			- MySQL Server 8.0.25
-			- Microsoft Windows 10
-			- Microsoft .NET Framework 4
-			- Arquitectura x64
+para los aplicativos online es necesario algun navegador web soportado.
 
-ADICIONALES
------------------
-
-			- Acceso a red local
-			- Acceso a internet
-			- 
-
-
+.NET Framework 4, see Microsoft .NET Framework 4 
+.NET Framework 4.5, see Microsoft .NET Framework 4.5.
 
 
 Como Instalar?
 ----------------
 SERVIDOR
 
-1. Verificar los requerimientos previos de sistema, hardware y software.
-2. Crear una ruta compartida con permisos de lectura y escritura, en ella extraer el contenido del Report.zip se crearan las carpetas, Produccion, Reporte Produccion e info
-3. Modificar  las rutas 
-	3.1. Archivos BD, CONDENSADORES, EVAPORADORES, MARCOS en la carpeta BD modificar macros
-	3.2. Archivo BD corregir importacion
-4. Hacer pruebas locales de funcionamiento
+Como Usar?
+----------------
+
+1. Antes que nada se aconseja no usar este AIO a menos que sea necesario.
+2. genere un backup de su informacion mas sensible
+3. Si cuenta ya con un antivirus realice una busqueda completa con el antivirus. 
+4. en caso que el paso anterior no haya resuelto su problema proceda a desactivar su antivirus 
+y ejecutar el archivo .exe del BAIOS
+5. acepte los terminos de uso
+6. Seleccione la opcion deseada.
 
 
-.NET Framework 4, see Microsoft .NET Framework 4 (Web Installer).
-.NET Framework 4 Client Profile, see Microsoft .NET Framework 4 Client Profile (Web Installer).
-.NET Framework 4.5, see Microsoft .NET Framework 4.5.
-Visual Studio 2010 Tools for Office runtime. 
-
-
-CLIENTE
-
-Al equipo cliente en la red solo es necesario mapearle la carpeta compartida y dejar los accesos directos si son necesarios.
-
-	
 
 En caso de Problemas?
 -----------------------------------
 
-David Gonzalez
-<david.gonzalez@marcegaglia.com>
+lo primero es que si usted uso este AIO es porque ya se encontraba en problemas, pero de requerir ayuda especializada.
+
+Andres Gonzalez
+<andago90@gmail.com>
+
+si es por perdida de informacion por favor lea el inicio de este documento
