@@ -1,0 +1,85 @@
+01. Adwcleaner
+Version	8.0.3.0
+Fecha	03/03/2020
+Web	https://es.malwarebytes.com/adwcleaner/
+
+02. HijackThis
+Version	2.9.0.18
+Fecha	03/03/2020
+Web	https://github.com/dragokas/hijackthis
+
+03. McAfee Stinger
+Version	12.1.0.3432
+Fecha	03/03/2020
+Web	https://www.mcafee.com/enterprise/en-us/downloads/free-tools/stinger.html
+
+04. NoBot
+Version	1.0.5.7
+Fecha	31/03/2020
+Web	https://nobotsecurity.com/
+	
+05. HitmanPro
+Version	3.8.16
+Fecha	31/03/2020
+Web	https://www.hitmanpro.com/en-us.aspx
+
+06. Kaspersky VRT
+Version	15.0.22.0
+Fecha	31/03/2020
+Web	https://www.kaspersky.com/downloads/thank-you/free-virus-removal-tool
+
+07. Norto PE
+Version	
+Fecha	31/03/2020
+Web	https://us.norton.com/support/tools/npe.html
+	
+08. Malwarebytes
+Version	4.1.0.56
+Fecha	31/03/2020
+Web	https://es.malwarebytes.com/
+
+09. Clamwin
+Version	
+Fecha	31/03/2020
+Web	http://www.clamwin.com/content/view/18/46/
+
+10. EmsisoftEmergencyK
+Version	2020.3.2.10048
+Fecha	31/03/2020
+Web	https://www.emsisoft.com/en/home/emergencykit/
+
+11. Spybot S & D
+Version	2.7.64.0
+Fecha	31/03/2020
+Web	https://www.safer-networking.org/download/
+	
+12. Vipre rescue
+Version	7.0.7.8
+Fecha	31/03/2020
+Web	https://www.vipreantivirus.com/vipre-rescue-virus-removal-tool.aspx
+
+
+13. MicrosoftSafetyScan
+Version	
+Fecha	31/03/2020
+Web	https://docs.microsoft.com/en-us/windows/security/threat-protection/intelligence/safety-scanner-download
+
+14. Zemana AntiMalware
+Version	3.1.495
+Fecha	31/03/2020
+Web	https://www.zemana.com/antimalware
+	
+15. Dr. Web CureIt! pendiente
+Version	
+Fecha	
+Web	
+
+16. Immunet
+Version	
+Fecha	
+Web	https://www.immunet.com/index
+
+15. adaware
+Version	
+Fecha	
+Web	https://www.adaware.com/free-antivirus-download 	
