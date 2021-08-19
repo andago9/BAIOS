@@ -5,7 +5,13 @@ Blinter AIO Security
 Que es BAIOS?
 -----------------------------
 
-Blinter All In One Security o BAIOS es una recopilación de antivirus y utilidades tanto portables, instalables como ejecutables que a criterio del equipo programador cumplen con unos criterios para ser tenidos en cuenta en este AIO, los programas son de uso gratuito y su uso debe ser bajo su propia responsabilidad, ya que algunos virus, malwares o similares se pueden alojar en archivos del sistema o en caso dado pueden ser escaneados como un falso positivo, por lo cual se aconseja no eliminar archivos hasta estar seguros de que pueda hacerlo y no ocasionar un daño irreversible a su sistema.
+Blinter All In One Security o BAIOS es una recopilación de antivirus y utilidades tanto 
+portables, instalables como ejecutables que a criterio del equipo programador cumplen 
+con unos criterios para ser tenidos en cuenta en este AIO, los programas son de uso 
+gratuito y su uso debe ser bajo su propia responsabilidad, ya que algunos virus, malwares
+ o similares se pueden alojar en archivos del sistema o en caso dado pueden ser escaneados
+ como un falso positivo, por lo cual se aconseja no eliminar archivos hasta estar seguros 
+ de que pueda hacerlo y no ocasionar un daño irreversible a su sistema.
 
 
 Requerimientos?
@@ -30,9 +36,13 @@ Recomendado
 SOFTWARE
 -----------------
 
-Algunos aplicativos pueden requerir la instalacion previa de algun complemento o frameworks pero en general se intenta que no sea solicitado ninguno.
+Algunos aplicativos pueden requerir la instalacion previa de algun complemento o frameworks
+ pero en general se intenta que no sea solicitado ninguno.
 
 para los aplicativos online es necesario algun navegador web soportado.
+
+.NET Framework 4, see Microsoft .NET Framework 4
+.NET Framework 4.5, see Microsoft .NET Framework 4.5.
 
 
 Como Usar?
@@ -41,22 +51,12 @@ Como Usar?
 1. Antes que nada se aconseja no usar este AIO a menos que sea necesario.
 2. genere un backup de su informacion mas sensible
 3. Si cuenta ya con un antivirus realice una busqueda completa con el antivirus. 
-4. en caso que el paso anterior no haya resuelto su problema proceda a desactivarlo y ejecutar el archivo .exe del BAIOS
+4. en caso que el paso anterior no haya resuelto su problema proceda a desactivar su antivirus 
+y ejecutar el archivo .exe del BAIOS
 5. acepte los terminos de uso
 6. Seleccione la opcion deseada.
 
 
-.NET Framework 4, see Microsoft .NET Framework 4 (Web Installer).
-.NET Framework 4 Client Profile, see Microsoft .NET Framework 4 Client Profile (Web Installer).
-.NET Framework 4.5, see Microsoft .NET Framework 4.5.
-Visual Studio 2010 Tools for Office runtime. 
-
-
-CLIENTE
-
-Al equipo cliente en la red solo es necesario mapearle la carpeta compartida y dejar los accesos directos si son necesarios.
-
-	
 
 En caso de Problemas?
 -----------------------------------
