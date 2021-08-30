@@ -1,11 +1,83 @@
 BLINTER AIO SECURITY
 
+Pendientes:
+
+- confirmar logo y aporte de Blinter. se habla con veloza.
+- crear lista de aplicativos ejecutables
+- crear lista de instaladores con enlaces
+- advertencia que algunos aplicativos requieren conexion a internet para actualizacion de firmas
+- advertencia adicional en aplicativos que pueden arrojar falsos positivos o de no eliminar archivos sin saber que son.
+- pruebas y manuales de uso de cada aplicativo portable.
+- en about poner el manual de uso y recomendaciones adicionales.
+- al salir del aplicativo mostrar mensaje de esta seguro que desea salir.
+- personalizar .exe de cada archivo
+- las 3 versiones aprobadas son baios full, baios lite, baios rescue en el momento se esta trabajando solo en baios lite con archivos ejecutables y enlaces a descargas que se espera pese aproximadamente 500MB
+- crear mini blog en blogger para cargar la informacion y aplicativo.
+
+----------------------------------------------------------------------------------------------------------------------------
+BAIOS
+Updated:	20 08 2021
+Version:	2
+Autor:		Andago
+----------------------------------------------------------------------------------------------------------------------------
+Add:		Adicion de algo nuevo a los archivos o codigo 
+Change:		Cambio de algun elemento de los archivos o codigo
+Fix: 		Correcion de errores reportados por usuarios o en pruebas 
+Upgrade:	Actualizacion de algun complemento, plugin, o elemento necesario para le funcionamiento
+
+- crear botones adelante y atras en todos los forms
+
+
+----------------------------------------------------------------------------------------------------------------------------
+BAIOS
+Updated:	20 08 2021
+Version:	2
+Autor:		Andago
+----------------------------------------------------------------------------------------------------------------------------
+Add:		Adicion de algo nuevo a los archivos o codigo 
+Change:		Cambio de algun elemento de los archivos o codigo
+Fix: 		Correcion de errores reportados por usuarios o en pruebas 
+Upgrade:	Actualizacion de algun complemento, plugin, o elemento necesario para le funcionamiento
+
+Upgrade:	por temas de licencia se deja de usar autoplay y se pasa a desarrollo en C# para aplicaciones de escritorio.
+Change:		se cambia el formato de changelog para detallar los cambios
+Change		se crea Bienvenida donde se da una introduccion del AIO.
+change:		se crea acuerdouso y se copia lo del anterior trabajo para que el usuario sea consiente que se pueden tener riesgos.
+change:		se crea form menu sin formato
+change:		se crea form ejecutables sin formato
+change:		se crea form portables sin formato y se añaden imagenes
+change:		se crea form online sin formato
+Upgrade 	se actualiza listado de software ejecutable y se descargan ultimas versiones. 
+			- Adwcleaner
+			- HijackThis
+			- McAfee Stinger
+			- Nobot
+			- Hitman Pro
+			- Kaspersky VRT 
+			- Norton PowerEraser
+			- MicrosoftSafetyScan
+			- IObit Malware Fighter
+			- K7 Disinfector
+			- Spybot
+
+
+
+ 
+
+
+
+
+V 1.8.0
+
+se cambia color de fondo a  #006980
+Se modifica disposicion de Menu.
+
+
 
 V 1.6.0
 se ponen animaciones en los iconos de interface para que el cursor se vuelva mano.
 se pone en acerca de los logos de marca andago y velosergio.
 detalles de software se modifica, de un txt a una ventana de dialogo.
-
 
 
 
