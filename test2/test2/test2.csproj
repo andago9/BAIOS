@@ -191,5 +191,8 @@
   <ItemGroup>
     <None Include="Resources\Kaspersky-logo.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BAIOSTXT.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
