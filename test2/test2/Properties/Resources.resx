@@ -133,20 +133,20 @@
   <data name="icono-empresa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icono-empresa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Blinter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Blinter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="zip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="html" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\html.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="McAfee-Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\McAfee-Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BAIOSTXT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BAIOSTXT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Norton-Power-Eraser-Free-Download-For-PC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Norton-Power-Eraser-Free-Download-For-PC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iobit-malware-fighter-cc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iobit-malware-fighter-cc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HijackThis-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HijackThis-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,19 +172,22 @@
   <data name="hitmanpro-vector-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hitmanpro-vector-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HijackThis-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HijackThis-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="McAfee-Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\McAfee-Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="zip" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HijackThis-logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HijackThis-logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="html" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\html.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BAIOSTXT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BAIOSTXT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HijackThis-logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HijackThis-logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blinter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blinter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BAIOSEscudo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BAIOSEscudo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

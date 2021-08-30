@@ -40,9 +40,10 @@ namespace test2
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(312, 21);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(260, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.Size = new System.Drawing.Size(134, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "BIENVENIDO!!!";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
@@ -59,17 +60,17 @@ namespace test2
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(154, 75);
+            this.label3.Location = new System.Drawing.Point(145, 57);
             this.label3.MaximumSize = new System.Drawing.Size(400, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(399, 143);
+            this.label3.Size = new System.Drawing.Size(398, 182);
             this.label3.TabIndex = 2;
             this.label3.Text = resources.GetString("label3.Text");
             this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(205, 240);
+            this.button1.Location = new System.Drawing.Point(202, 301);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
@@ -79,7 +80,7 @@ namespace test2
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(412, 240);
+            this.button2.Location = new System.Drawing.Point(424, 301);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
@@ -92,14 +93,14 @@ namespace test2
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(684, 311);
+            this.ClientSize = new System.Drawing.Size(684, 361);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(700, 350);
+            this.MaximumSize = new System.Drawing.Size(700, 400);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BAIOS";
