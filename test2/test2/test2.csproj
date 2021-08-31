@@ -197,5 +197,65 @@
   <ItemGroup>
     <None Include="Resources\BAIOSEscudo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoneAntimalware2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\superantispyware.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clamwin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drweb.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emsisoft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zemana-Flat-Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spyware-Blaster-Free-Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USBAV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Argente-Utilities.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESET-Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f-secure-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PANDA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trend-micro-housecall-logo.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VirusTotal.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\antiscanme.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avira_Antivirus_Logo.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fortiguard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hybrid analisys.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jotti.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

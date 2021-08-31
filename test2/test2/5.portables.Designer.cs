@@ -82,7 +82,7 @@ namespace test2
             // 
             this.pictureBox10.BackgroundImage = global::test2.Properties.Resources.Kaspersky_logo;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Location = new System.Drawing.Point(313, 303);
+            this.pictureBox10.Location = new System.Drawing.Point(12, 155);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(183, 68);
             this.pictureBox10.TabIndex = 9;
@@ -92,7 +92,7 @@ namespace test2
             // 
             this.pictureBox9.BackgroundImage = global::test2.Properties.Resources.HijackThis_logo;
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(662, 12);
+            this.pictureBox9.Location = new System.Drawing.Point(168, 12);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(103, 94);
             this.pictureBox9.TabIndex = 8;
@@ -102,7 +102,7 @@ namespace test2
             // 
             this.pictureBox8.BackgroundImage = global::test2.Properties.Resources._56d81fd6_0494_5449_96bb_0c94990f3090;
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(190, 168);
+            this.pictureBox8.Location = new System.Drawing.Point(473, 12);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(109, 79);
             this.pictureBox8.TabIndex = 7;
@@ -110,9 +110,9 @@ namespace test2
             // 
             // pictureBox7
             // 
-            this.pictureBox7.BackgroundImage = global::test2.Properties.Resources.iobit_malware_fighter_cc;
+            this.pictureBox7.BackgroundImage = global::test2.Properties.Resources.ZoneAntimalware2;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(26, 168);
+            this.pictureBox7.Location = new System.Drawing.Point(342, 273);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(106, 89);
             this.pictureBox7.TabIndex = 6;
@@ -122,7 +122,7 @@ namespace test2
             // 
             this.pictureBox6.BackgroundImage = global::test2.Properties.Resources.Norton_Power_Eraser_Free_Download_For_PC;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(328, 163);
+            this.pictureBox6.Location = new System.Drawing.Point(242, 155);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(168, 94);
             this.pictureBox6.TabIndex = 5;
@@ -132,7 +132,7 @@ namespace test2
             // 
             this.pictureBox5.BackgroundImage = global::test2.Properties.Resources.Microsoft_Safety_Scanner;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(496, 12);
+            this.pictureBox5.Location = new System.Drawing.Point(491, 155);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(100, 94);
             this.pictureBox5.TabIndex = 4;
@@ -142,7 +142,7 @@ namespace test2
             // 
             this.pictureBox4.BackgroundImage = global::test2.Properties.Resources.k7;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(328, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(640, 155);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(109, 94);
             this.pictureBox4.TabIndex = 3;
@@ -152,7 +152,7 @@ namespace test2
             // 
             this.pictureBox3.BackgroundImage = global::test2.Properties.Resources.hitmanpro_vector_logo;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(537, 168);
+            this.pictureBox3.Location = new System.Drawing.Point(617, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(171, 81);
             this.pictureBox3.TabIndex = 2;
@@ -162,7 +162,7 @@ namespace test2
             // 
             this.pictureBox2.BackgroundImage = global::test2.Properties.Resources.adwcleaner;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(179, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(26, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 94);
             this.pictureBox2.TabIndex = 1;
@@ -173,7 +173,7 @@ namespace test2
             // 
             this.PictureBox1.BackgroundImage = global::test2.Properties.Resources.McAfee_Logo;
             this.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.PictureBox1.Location = new System.Drawing.Point(313, 12);
             this.PictureBox1.Name = "PictureBox1";
             this.PictureBox1.Size = new System.Drawing.Size(120, 94);
             this.PictureBox1.TabIndex = 0;
