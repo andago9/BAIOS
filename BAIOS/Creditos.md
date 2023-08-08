@@ -1,7 +1,8 @@
---------------------------------------
-	******** Portables
-//////////////////////////////////////////
-_______________________________________________
+# BAIOS
+Blinter AIO Security
+
+PORTABLES
+-----------------------------
 
 **************    01. Adwcleaner    ********
 ************** AIO UPDATE 05/Jan/2022**********
@@ -19,6 +20,75 @@ Requisitos de software:
 	* Windows 10 (32/64-bit)
 	* Windows 8 (32/64-bit)
 	* Windows 7 (32/64-bit)
+
+
+Requerimientos?
+--------------
+
+HARDWARE
+-----------------
+
+Minimo
+
+			- 1 GB RAM
+			- 4 GB HD
+			- Procesador de 2 núcleos a 1,6 GHz
+
+Recomendado
+
+			- 4 GB RAM
+			- 8 GB  HD
+			- Procesador de 4 núcleos a 2,6 GHz
+
+
+SOFTWARE
+-----------------
+
+Algunos aplicativos pueden requerir la instalacion previa de algun complemento o frameworks 
+pero en general se intenta que no sea solicitado ninguno.
+
+para los aplicativos online es necesario algun navegador web soportado.
+
+.NET Framework 4, see Microsoft .NET Framework 4 
+.NET Framework 4.5, see Microsoft .NET Framework 4.5.
+
+
+
+Como Usar?
+----------------
+
+1. Antes que nada se aconseja no usar este AIO a menos que sea necesario.
+2. genere un backup de su informacion mas sensible
+3. Si cuenta ya con un antivirus realice una busqueda completa con el antivirus. 
+4. en caso que el paso anterior no haya resuelto su problema proceda a desactivar su antivirus 
+y ejecutar el archivo .exe del BAIOS
+5. acepte los terminos de uso
+6. Seleccione la opcion deseada.
+
+
+
+En caso de Problemas?
+-----------------------------------
+
+lo primero es que si usted uso este AIO es porque ya se encontraba en problemas, pero de 
+requerir ayuda especializada puede contactarnos al correo:
+
+BAIOS
+<blinter.baios@gmail.com>
+
+si nos contacta por perdida de informacion o daños en sus sistema por favor lea el inicio
+ de este documento
+
+
+
+
+
+--------------------------------------
+	******** Portables
+//////////////////////////////////////////
+_______________________________________________
+
+
 	
 **************************************
 ********    02. HijackThis    ********
