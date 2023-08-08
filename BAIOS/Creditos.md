@@ -7,19 +7,19 @@ PORTABLES
 **************    01. Adwcleaner    ********
 ************** AIO UPDATE 05/Jan/2022**********
 
-VERSION		8.3.1.0
-FECHA		18/Nov/2021
-FABRICANTE	MALWAREBYTES
-WEB			https://es.malwarebytes.com/adwcleaner/
-EULA		https://www.malwarebytes.com/adwcleaner/eula?x-source=adw&ADDITIONAL_x-source=adw
-MANUAL		https://www.infospyware.com/antispyware/adwcleaner/
-https://www.youtube.com/watch?v=0mf_8X0z0OE
 
-Requisitos de software:
+	* Version 8.3.1.0
+	* Fecha 18/Nov/2021
+ 	* MALWAREBYTES
+ 	* Descarga Directa (https://es.malwarebytes.com/adwcleaner/)
+ 	* EULA (https://www.malwarebytes.com/adwcleaner/eula?x-source=adw&ADDITIONAL_x-source=adw)
+  	* MANUALES Y GUIAS
+	* https://www.infospyware.com/antispyware/adwcleaner/
+	* https://www.youtube.com/watch?v=0mf_8X0z0OE
 
-	* Windows 10 (32/64-bit)
-	* Windows 8 (32/64-bit)
-	* Windows 7 (32/64-bit)
+
+
+
 
 
 Requerimientos?
