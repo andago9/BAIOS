@@ -6,7 +6,7 @@ Que es BAIOS?
 
 Blinter All In One Security o BAIOS es una recopilación de antivirus y utilidades tanto 
 portables, instalables como ejecutables que a criterio del equipo programador cumplen 
-con unos criterios para ser tenidos en cuenta en este AIO, Algunos de los programas son 
+con unos parámetros para ser tenidos en cuenta en este AIO, Algunos de los programas son 
 de uso gratuito y otros son versiones de 30 dias de prueba sin embargo su uso debe ser 
 bajo su propia responsabilidad, ya que algunos virus, malwares o similares se pueden 
 alojar en archivos del sistema o en caso dado pueden ser escaneados  como un falso 
