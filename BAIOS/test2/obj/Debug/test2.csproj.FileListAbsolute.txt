@@ -1,0 +1,89 @@
+C:\Users\dgonzalez\source\repos\test2\test2\bin\Debug\test2.exe.config
+C:\Users\dgonzalez\source\repos\test2\test2\bin\Debug\test2.exe
+C:\Users\dgonzalez\source\repos\test2\test2\bin\Debug\test2.pdb
+C:\Users\dgonzalez\source\repos\test2\test2\obj\Debug\test2.csproj.AssemblyReference.cache
+C:\Users\dgonzalez\source\repos\test2\test2\obj\Debug\test2.Properties.Resources.resources
+C:\Users\dgonzalez\source\repos\test2\test2\obj\Debug\test2.csproj.GenerateResource.cache
+C:\Users\dgonzalez\source\repos\test2\test2\obj\Debug\test2.csproj.CoreCompileInputs.cache
+C:\Users\dgonzalez\source\repos\test2\test2\obj\Debug\test2.exe
+C:\Users\dgonzalez\source\repos\test2\test2\obj\Debug\test2.pdb
+C:\Users\dgonzalez\source\repos\test2\test2\obj\Debug\test2.BAIOS.resources
+C:\Users\dgonzalez\source\repos\test2\test2\obj\Debug\test2.Form1.resources
+C:\Users\dgonzalez\source\repos\test2\test2\obj\Debug\test2.Form2.resources
+C:\Users\dgonzalez\source\repos\test2\test2\obj\Debug\test2.Form3.resources
+C:\Users\dgonzalez\source\repos\test2\test2\obj\Debug\test2.Form4.resources
+C:\Users\dgonzalez\Dropbox\test2\test2\bin\Debug\test2.exe.config
+C:\Users\dgonzalez\Dropbox\test2\test2\bin\Debug\test2.exe
+C:\Users\dgonzalez\Dropbox\test2\test2\bin\Debug\test2.pdb
+C:\Users\dgonzalez\Dropbox\test2\test2\obj\Debug\test2.csproj.AssemblyReference.cache
+C:\Users\dgonzalez\Dropbox\test2\test2\obj\Debug\test2.BAIOS.resources
+C:\Users\dgonzalez\Dropbox\test2\test2\obj\Debug\test2.Form1.resources
+C:\Users\dgonzalez\Dropbox\test2\test2\obj\Debug\test2.Form2.resources
+C:\Users\dgonzalez\Dropbox\test2\test2\obj\Debug\test2.Form3.resources
+C:\Users\dgonzalez\Dropbox\test2\test2\obj\Debug\test2.Form4.resources
+C:\Users\dgonzalez\Dropbox\test2\test2\obj\Debug\test2.Properties.Resources.resources
+C:\Users\dgonzalez\Dropbox\test2\test2\obj\Debug\test2.csproj.GenerateResource.cache
+C:\Users\dgonzalez\Dropbox\test2\test2\obj\Debug\test2.csproj.CoreCompileInputs.cache
+C:\Users\dgonzalez\Dropbox\test2\test2\obj\Debug\test2.exe
+C:\Users\dgonzalez\Dropbox\test2\test2\obj\Debug\test2.pdb
+C:\Users\dgonzalez\Dropbox\test2\test2\obj\Debug\test2.Form5.resources
+C:\Users\dgonzalez\Documents\GitHub\BAIOS\test2\test2\bin\Debug\test2.exe.config
+C:\Users\dgonzalez\Documents\GitHub\BAIOS\test2\test2\bin\Debug\test2.exe
+C:\Users\dgonzalez\Documents\GitHub\BAIOS\test2\test2\bin\Debug\test2.pdb
+C:\Users\dgonzalez\Documents\GitHub\BAIOS\test2\test2\obj\Debug\test2.csproj.AssemblyReference.cache
+C:\Users\dgonzalez\Documents\GitHub\BAIOS\test2\test2\obj\Debug\test2.BAIOS.resources
+C:\Users\dgonzalez\Documents\GitHub\BAIOS\test2\test2\obj\Debug\test2.Form1.resources
+C:\Users\dgonzalez\Documents\GitHub\BAIOS\test2\test2\obj\Debug\test2.Form2.resources
+C:\Users\dgonzalez\Documents\GitHub\BAIOS\test2\test2\obj\Debug\test2.Form3.resources
+C:\Users\dgonzalez\Documents\GitHub\BAIOS\test2\test2\obj\Debug\test2.Form4.resources
+C:\Users\dgonzalez\Documents\GitHub\BAIOS\test2\test2\obj\Debug\test2.Form5.resources
+C:\Users\dgonzalez\Documents\GitHub\BAIOS\test2\test2\obj\Debug\test2.Properties.Resources.resources
+C:\Users\dgonzalez\Documents\GitHub\BAIOS\test2\test2\obj\Debug\test2.csproj.GenerateResource.cache
+C:\Users\dgonzalez\Documents\GitHub\BAIOS\test2\test2\obj\Debug\test2.csproj.CoreCompileInputs.cache
+C:\Users\dgonzalez\Documents\GitHub\BAIOS\test2\test2\obj\Debug\test2.exe
+C:\Users\dgonzalez\Documents\GitHub\BAIOS\test2\test2\obj\Debug\test2.pdb
+H:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\bin\Debug\test2.exe.config
+H:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\bin\Debug\test2.exe
+H:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\bin\Debug\test2.pdb
+H:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\obj\Debug\test2.csproj.AssemblyReference.cache
+H:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\obj\Debug\test2.BAIOS.resources
+H:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\obj\Debug\test2.Form1.resources
+H:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\obj\Debug\test2.Form2.resources
+H:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\obj\Debug\test2.Form3.resources
+H:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\obj\Debug\test2.Form4.resources
+H:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\obj\Debug\test2.Form5.resources
+H:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\obj\Debug\test2.Properties.Resources.resources
+H:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\obj\Debug\test2.csproj.GenerateResource.cache
+H:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\obj\Debug\test2.csproj.CoreCompileInputs.cache
+H:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\obj\Debug\test2.exe
+H:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\obj\Debug\test2.pdb
+G:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\obj\Debug\test2.csproj.AssemblyReference.cache
+G:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\obj\Debug\test2.exe
+G:\Mi unidad\BAIOS\BAIOS FULL\test2\test2\obj\Debug\test2.pdb
+H:\Mi unidad\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.csproj.AssemblyReference.cache
+H:\Mi unidad\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.BAIOS.resources
+H:\Mi unidad\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.Form1.resources
+H:\Mi unidad\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.Form2.resources
+H:\Mi unidad\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.Form3.resources
+H:\Mi unidad\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.Form4.resources
+H:\Mi unidad\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.Form5.resources
+H:\Mi unidad\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.Properties.Resources.resources
+H:\Mi unidad\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.csproj.GenerateResource.cache
+H:\Mi unidad\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.csproj.CoreCompileInputs.cache
+H:\Mi unidad\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.exe
+H:\Mi unidad\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.pdb
+G:\Mi unidad\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.csproj.AssemblyReference.cache
+G:\Mi unidad\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.exe
+G:\Mi unidad\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.pdb
+H:\My Drive\OLD\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.csproj.AssemblyReference.cache
+H:\My Drive\OLD\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.BAIOS.resources
+H:\My Drive\OLD\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.Form1.resources
+H:\My Drive\OLD\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.Form2.resources
+H:\My Drive\OLD\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.Form3.resources
+H:\My Drive\OLD\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.Form4.resources
+H:\My Drive\OLD\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.Form5.resources
+H:\My Drive\OLD\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.Properties.Resources.resources
+H:\My Drive\OLD\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.csproj.GenerateResource.cache
+H:\My Drive\OLD\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.csproj.CoreCompileInputs.cache
+H:\My Drive\OLD\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.exe
+H:\My Drive\OLD\BAIOS\VB\BAIOS FULL\test2\test2\obj\Debug\test2.pdb
