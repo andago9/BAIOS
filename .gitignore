@@ -1,0 +1,14 @@
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build
+[Bb]in/
+[Oo]bj/
+*.pdb
+*.cache
+*.ilk
+*.log

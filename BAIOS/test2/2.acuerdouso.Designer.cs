@@ -46,7 +46,6 @@ namespace test2
             this.label1.Size = new System.Drawing.Size(134, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "BIENVENIDO!!!";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // label2
             // 
@@ -66,7 +65,6 @@ namespace test2
             this.label3.Size = new System.Drawing.Size(398, 182);
             this.label3.TabIndex = 2;
             this.label3.Text = resources.GetString("label3.Text");
-            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // button1
             // 

@@ -1,21 +1,25 @@
-# Security Policy
+# Política de seguridad
 
-## Supported Versions
+La política de producto está en [docs/seguridad.md](docs/seguridad.md) (permisos, integridad de herramientas, descargas, reportes).
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+## Versiones soportadas
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+Ninguna línea de producción recibe parches todavía: BAIOS 4 no está publicado y el prototipo **6 Alpha / `test2` (BAIOS 3)** está congelado.
 
-## Reporting a Vulnerability
+| Versión | Soporte |
+| --- | --- |
+| 4.x (planificado) | Aún no publicado |
+| 6 Alpha / test2 | No |
+| BAIOS 3 y anteriores | No |
 
-Use this section to tell people how to report a vulnerability.
+La tabla de ejemplo 5.1 / 4.0 de la plantilla de GitHub no aplica a este repo.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+## Cómo reportar una vulnerabilidad
+
+Si encuentras un problema de seguridad **del motor BAIOS** (no de AdwCleaner, Defender, Autoruns u otro tercero):
+
+1. Escribe a **blinter.baios@gmail.com**.
+2. Describe el impacto y cómo reproducirlo. No abras un issue público con exploit.
+3. Los fabricantes de herramientas incluidas se reportan por sus canales oficiales.
+
+No hay SLA de respuesta mientras no exista un 4.0 publicado; se acusará recibo cuando sea posible.
