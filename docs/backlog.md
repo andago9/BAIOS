@@ -6,7 +6,7 @@ Leyenda de tipo (Keep a Changelog): **Add**, **Change**, **Fix**, **Upgrade**, *
 
 Estados: `pendiente` · `parcial` · `hecho` · `fuera_de_alcance_ahora` · `archivado`.
 
-Orden: **DOC + F1 + F2 ahora**. F3 en adelante no se abre hasta que visión, arquitectura y catálogo vigente estén firmes. El prototipo `test2` no recibe features 4.0; sí admite higiene (compilar / git).
+Orden: **DOC + F1 + F2 + F3-01 hechos**. Siguiente: **F3-02** (modos). El prototipo `test2` no recibe features 4.0.
 
 ## Hecho (no reabrir)
 
@@ -20,6 +20,8 @@ Orden: **DOC + F1 + F2 ahora**. F3 en adelante no se abre hasta que visión, arq
 | DONE-06 | Change | Visión 4.0: toolkit, modos Hogar/Técnico, no-antivirus. |
 | DONE-07 | Add | Roadmap 4.0 / 4.1 / 4.2. |
 | DONE-08 | Fix | Higiene v3: `.gitignore`, sin `bin/`/`obj/`/`.vs` en git; código muerto Form4/Form5 y handlers vacíos. |
+| DONE-09 | Change | F1 catálogo vigente + F2 arquitectura/contratos cerrados (2026-08-17). |
+| DONE-10 | Add | F3-01: solución `src/BAIOS.sln` (.NET 8 + WPF). |
 
 ## DOC — Definición (esta fase)
 
@@ -36,7 +38,7 @@ Orden: **DOC + F1 + F2 ahora**. F3 en adelante no se abre hasta que visión, arq
 | DOC-09 | Add | Esqueleto [seguridad](seguridad.md) y alinear `SECURITY.md`. | hecho |
 | DOC-10 | Change | Alinear [README](../README.md) con la visión 4.0. | hecho |
 
-Siguiente trabajo de definición: F1 (confirmar vigencia en vivo) y F2 (cerrar stack y contratos). No abrir F3.
+F1 y F2 cerrados. Probar binarios en un PC queda en F3-09 / F4-04, no reabre las tablas del catálogo.
 
 ## F1 — Rescate
 
@@ -44,31 +46,31 @@ Inventario ya extraído en el catálogo. Aquí se **confirma vigencia**, no se r
 
 | ID | Tipo | Ítem | Estado |
 | --- | --- | --- | --- |
-| F1-01 | Change | Marcar cada ficha: `vigente` / `abandonada` / `alternativa` / `fuera_de_4.0`. Primera pasada hecha en el catálogo; falta confirmar en vivo. | parcial |
-| F1-02 | Add | Núcleo 4.0 de lanzamiento: AdwCleaner, Microsoft Safety Scanner, Autoruns (ficha nueva). | parcial |
-| F1-03 | Change | Lista 4.1+: HijackThis, KVRT, Norton PE, HitmanPro, ZHPCleaner, Emsisoft Emergency Kit, Spybot — licencia y si son portable de verdad. | pendiente |
-| F1-04 | Remove | Confirmar fuera: Stinger/Trellix, K7, NoBot, IObit, ClamWin, Zemana, Immunet, Adaware, CureIt pendiente. | pendiente |
-| F1-05 | Change | LiveCD históricos → candidatos 4.2+ (solo URLs oficiales). | pendiente |
-| F1-06 | Change | Online (VirusTotal / ESET): enlaces en modo Técnico, no pantallas Form4/Form5. | pendiente |
-| F1-07 | Change | Documentar qué aportaba v1–v3 de verdad: launcher, acuerdo de uso, avisos de falsos positivos. | pendiente |
-| F1-08 | Fix | URLs copiadas por error en fichas históricas (Safety Scanner / ZHP / Kaspersky → McAfee). Antes P2-10. | pendiente |
+| F1-01 | Change | Marcar cada ficha: `vigente` / `abandonada` / `alternativa` / `fuera_de_4.0`. | hecho |
+| F1-02 | Add | Núcleo 4.0: AdwCleaner, Microsoft Safety Scanner, Autoruns. | hecho |
+| F1-03 | Change | Lista 4.1+: HijackThis, KVRT, HitmanPro, ZHPCleaner, EEK, Spybot/MB (opcional instalador). Norton PE fuera (EOL). | hecho |
+| F1-04 | Remove | Fuera: Stinger/Trellix, K7, NoBot, IObit, ClamWin, Zemana, Immunet, Adaware, CureIt, Vipre, NPE. | hecho |
+| F1-05 | Change | LiveCD históricos → 4.2+ (solo URLs oficiales). | hecho |
+| F1-06 | Change | Online: enlaces Técnico (VirusTotal, ESET); no Form4/Form5. | hecho |
+| F1-07 | Change | Herencia v1–v3: launcher, acuerdo, avisos. | hecho |
+| F1-08 | Fix | URLs oficiales (MSERT, KVRT, ZHP); quitar McAfee en fichas ajenas. | hecho |
 
-## F2 — Definición de 4.0 (antes de código)
-
-| ID | Tipo | Ítem | Estado |
-| --- | --- | --- | --- |
-| F2-01 | Add | Decisión de stack: recomendación .NET 8 self-contained + WPF; WinUI 3 como alternativa. Cerrar en [arquitectura](arquitectura.md). | pendiente |
-| F2-02 | Add | Estructura de solución: `BAIOS.exe` + Core (Security, Diagnostics, Maintenance, Networking) + Modules + Tools + Reports + Config. | pendiente |
-| F2-03 | Add | Contrato del manifiesto de herramientas (campos, hashes, admin, interpretación de salida). | pendiente |
-| F2-04 | Add | Modelo de permisos: qué corre elevado, UAC, qué no. | pendiente |
-| F2-05 | Add | Pantallas y comportamiento por módulo y por modo (Hogar vs Técnico). | pendiente |
-| F2-06 | Add | Esquema del reporte de sesión (secciones, severidades, recomendaciones). | pendiente |
-
-## F3 — MVP 4.0 (código; no abrir aún)
+## F2 — Definición de 4.0 (cerrada)
 
 | ID | Tipo | Ítem | Estado |
 | --- | --- | --- | --- |
-| F3-01 | Add | Proyecto nuevo (no `test2`): solución BAIOS. El `.gitignore` del repo actual ya está (P3-01); F3-01 es la solución 4.0, no reabrir Lite. | pendiente |
+| F2-01 | Add | Stack: .NET 8 self-contained + WPF. WinUI 3 solo si 4.2 lo exige. | hecho |
+| F2-02 | Add | Solución `src/BAIOS.*` (App, Core, Security, Diagnostics, Maintenance, Networking, Tools, Reports, Config). | hecho |
+| F2-03 | Add | Contrato `manifest.json` schema 1. | hecho |
+| F2-04 | Add | Permisos / UAC por acción. | hecho |
+| F2-05 | Add | Pantallas Hogar vs Técnico. | hecho |
+| F2-06 | Add | Esquema de reporte (Finding + secciones). | hecho |
+
+## F3 — MVP 4.0 (código; siguiente fase)
+
+| ID | Tipo | Ítem | Estado |
+| --- | --- | --- | --- |
+| F3-01 | Add | Proyecto nuevo (no `test2`): [`src/BAIOS.sln`](../src/BAIOS.sln). | hecho |
 | F3-02 | Add | Selector de modo Hogar / Técnico (o default Técnico si se detecta perfil USB). | pendiente |
 | F3-03 | Add | Inicio: dashboard de estado del equipo. | pendiente |
 | F3-04 | Add | Seguridad nativa: Defender (estado, rápido, completo; offline si aplica). | pendiente |
@@ -88,7 +90,7 @@ Inventario ya extraído en el catálogo. Aquí se **confirma vigencia**, no se r
 | F4-02 | Add | Descarga, sha256, versionado; reemplazo sin recompilar. | pendiente |
 | F4-03 | Add | Logs de ejecución por herramienta. | pendiente |
 | F4-04 | Upgrade | Incorporar fichas F1-03 vigentes. | pendiente |
-| F4-05 | Add | HijackThis si F1 lo confirma, con alerta de falsos positivos. | pendiente |
+| F4-05 | Add | HijackThis (F1 lo confirma vigente), con alerta de falsos positivos. | pendiente |
 
 ## F5 — Producto 4.0 / 4.2
 

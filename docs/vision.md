@@ -13,7 +13,7 @@ El software de terceros se declara, se lanza y (desde 4.1) se actualiza por mani
 | BAIOS 1 | Automatización básica de herramientas | `.BAT` |
 | BAIOS 2 | Presentación y menú | AutoPlay Media Studio |
 | BAIOS 3 | Aplicación Windows (launcher de portables / ejecutables / online) | WinForms, .NET Framework 4.7.2 |
-| BAIOS 4 | Plataforma de diagnóstico y seguridad (orquestador) | .NET 8 (recomendado), ver [arquitectura](arquitectura.md) |
+| BAIOS 4 | Plataforma de diagnóstico y seguridad (orquestador) | .NET 8 + WPF self-contained, ver [arquitectura](arquitectura.md) |
 
 ## Problema que resuelve
 
@@ -108,6 +108,7 @@ El backlog Lite (P0–P3) está **archivado** en [backlog.md](backlog.md), salvo
 | [01. Visión](vision.md) | Este archivo |
 | [02. Arquitectura](arquitectura.md) | Stack, módulos, permisos |
 | [03. Catálogo](catalogo.md) | Herramientas y vigencia |
+| [Inventario](inventario.md) | Disco local: en uso / pendiente / desuso (no es el catálogo) |
 | [04. Diseño funcional](diseno-funcional.md) | Pantallas y comportamiento |
 | [05. Actualización](actualizacion.md) | Manifiesto y updates |
 | [06. Reportes](reportes.md) | Generación y exportación |

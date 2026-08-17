@@ -1,60 +1,72 @@
 # Sistema de reportes
 
-Esqueleto. Esquema cerrado en [F2-06](backlog.md); MVP en [F3-08](backlog.md). El reporte es lo que convierte BAIOS de colección de programas en herramienta de diagnóstico.
+Esquema **cerrado** en F2-06. MVP: [F3-08](backlog.md).
 
 ## Objetivo
 
-Cada sesión genera un informe BAIOS que un técnico puede dejar en el PC o llevarse. Formato 4.0: texto y HTML. PDF: 4.1+ si hace falta.
+Una sesión → un informe que el técnico deja en el PC o se lleva. 4.0: **HTML canónico** + **TXT** gemelo. PDF: 4.1+ si hace falta.
+
+## Modelo (`Finding`)
+
+| Campo | Valores |
+| --- | --- |
+| `section` | `security` \| `storage` \| `network` \| `system` \| `maintenance` |
+| `severity` | `ok` \| `warning` \| `fail` |
+| `title` | Corto |
+| `detail` | Opcional |
+| `source` | `native:<modulo>` o `tool:<id>` |
+
+La sesión añade cabecera y `recommendations[]` (strings).
 
 ## Cabecera
 
 - Producto: BAIOS — Blinter All In One Security
-- Equipo (hostname)
+- Hostname
 - Edición de Windows
-- Fecha y hora
-- Modo (Hogar / Técnico)
+- Fecha/hora local
+- Modo: Hogar / Técnico
 - Versión del motor
 
-## Secciones
+## Secciones (orden fijo)
 
-Cada hallazgo: **OK** / **aviso** / **fallo**, texto corto, origen (módulo nativo o herramienta).
-
-1. **Seguridad** — Defender, firewall, amenazas conocidas, herramientas lanzadas.
-2. **Almacenamiento** — salud del disco, SMART si aplica, espacio libre.
+1. **Seguridad** — Defender, firewall, herramientas lanzadas y su código de salida.
+2. **Almacenamiento** — espacio, SMART si aplica.
 3. **Red** — conectividad, DNS, gateway.
-4. **Sistema** — CPU/RAM, inicio, drivers con problema, servicios relevantes.
-5. **Mantenimiento** — qué se ejecutó (SFC, DISM, limpieza) y código de salida.
-6. **Recomendaciones** — lista accionable (liberar espacio, revisar inicio, etc.).
+4. **Sistema** — CPU/RAM, inicio, drivers con problema.
+5. **Mantenimiento** — qué se ejecutó (SFC, DISM, limpieza) y resultado.
+6. **Recomendaciones** — lista accionable.
 
-Ejemplo de tono (no es plantilla final):
+Tono (ejemplo, no plantilla literal de UI):
 
 ```
 SEGURIDAD
 OK  Microsoft Defender activo
 OK  Firewall activo
-OK  Sin amenazas detectadas
+OK  Sin amenazas reportadas por el motor
 
 ALMACENAMIENTO
-OK  Disco saludable
+OK  Disco accesible
 AVISO  Espacio disponible: 18%
 
 RED
 OK  Conectividad
-OK  DNS funcionando
+OK  DNS
 
 RECOMENDACIONES
 - Liberar espacio
-- Revisar programas de inicio
+- Revisar programas de inicio (Autoruns)
 ```
 
 ## Almacenamiento
 
-Carpeta `Reports/` junto a la app o en `%LOCALAPPDATA%\BAIOS\Reports\` si está instalada. Nombre sugerido: `BAIOS-<hostname>-<yyyyMMdd-HHmm>.html` (y `.txt` gemelo o el HTML como canónico).
+- Portable: `Reports/` junto al exe.
+- Instalado (4.2): `%LOCALAPPDATA%\BAIOS\Reports\`.
+- Nombre: `BAIOS-<hostname>-<yyyyMMdd-HHmm>.html` y `.txt`.
 
 ## Exportar
 
-4.0: abrir carpeta, copiar HTML/TXT. 4.2: atajo en el flujo Técnico al cerrar el diagnóstico completo.
+4.0: abrir carpeta / abrir HTML. 4.2: al cerrar el diagnóstico completo en Técnico, ofrecer «abrir informe».
 
 ## Privacidad
 
-El reporte puede incluir hostname, adaptadores, rutas. No incluir secretos. Aviso en modo Hogar antes de guardar. Detalle en [seguridad](seguridad.md).
+Puede incluir hostname y adaptadores. Sin secretos, sin telemetría en 4.0. Aviso en Hogar antes de guardar. Ver [seguridad](seguridad.md).

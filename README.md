@@ -16,27 +16,41 @@ Documentación de producto:
 
 ## Estado del repositorio
 
-El código en `BAIOS/test2` es el prototipo **BAIOS 3 / 6 Alpha** (WinForms, .NET Framework 4.7.2). Está **congelado**. No es BAIOS 4; no se restauran las pantallas Lite que faltan.
+El código de **BAIOS 4** está en [`src/BAIOS.sln`](src/BAIOS.sln) (.NET 8, WPF). Esqueleto F3-01: ventana mínima, aún sin dashboard ni herramientas.
 
-BAIOS 4 se define ahora en `docs/`. El código nuevo empieza en la fase F3 del backlog, cuando arquitectura y catálogo vigente estén firmes.
+El código en `BAIOS/test2` es el prototipo **BAIOS 3 / 6 Alpha** (WinForms, .NET Framework 4.7.2). Está **congelado**. No es BAIOS 4.
 
 Licencia del motor: [GNU GPL v3](LICENSE). Las herramientas de terceros conservan la suya.
 
-## Uso (cuando exista 4.0)
+## Cómo abrir BAIOS 4
 
-1. Copia de seguridad de lo importante.
-2. No desactives Defender de forma permanente.
-3. Acepta el acuerdo de uso (falsos positivos; no borres a ciegas).
-4. Elige modo Hogar o Técnico.
-5. Diagnóstico → seguridad → hardware → red → mantenimiento → reporte.
+1. Instala el [SDK de .NET 8](https://dotnet.microsoft.com/download/dotnet/8.0) (en esta máquina puede haber solo el *runtime*; hace falta el SDK para `dotnet build`).
+2. Abre [`src/BAIOS.sln`](src/BAIOS.sln) en Visual Studio 2022 o:
 
-Hasta entonces, el `.exe` del prototipo sigue el flujo antiguo (bienvenida → acuerdo → menú de herramientas) y está incompleto.
+```text
+dotnet build src/BAIOS.sln
+dotnet run --project src/BAIOS.App/BAIOS.App.csproj
+```
 
-## Requisitos (histórico del prototipo)
+Publicación portable self-contained (`win-x64`):
 
-Mínimo: 1 GB RAM, 4 GB de disco, 2 núcleos a 1,6 GHz. Recomendado: 4 GB RAM, 8 GB de disco, 4 núcleos a 2,6 GHz. .NET Framework 4.7.2 para `test2`. BAIOS 4 apuntará a .NET 8 self-contained (ver arquitectura).
+```text
+dotnet publish src/BAIOS.App/BAIOS.App.csproj -p:PublishProfile=win-x64
+```
 
-Algunos aplicativos de terceros piden red o privilegios de administrador.
+El ensamblado se llama `BAIOS.exe`, no `test2`.
+
+## Uso (producto 4.0)
+
+El flujo completo (acuerdo, modos, diagnóstico, reporte) se implementa en F3-02…F3-11. Hoy la app solo muestra que el motor 4.0 arranca.
+
+El `.exe` del prototipo `test2` sigue el flujo antiguo (bienvenida → acuerdo → menú) y está incompleto.
+
+## Requisitos
+
+**BAIOS 4:** Windows x64, SDK .NET 8 para compilar. El publish self-contained no pide instalar .NET en el PC de destino.
+
+**Prototipo test2:** .NET Framework 4.7.2. Mínimo histórico: 1 GB RAM, 4 GB de disco, 2 núcleos a 1,6 GHz.
 
 ## Contacto
 

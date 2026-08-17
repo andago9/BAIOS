@@ -2,7 +2,7 @@
 
 Fuente de producto: [visión](vision.md). Trabajo pendiente: [backlog](backlog.md).
 
-Orden: **documentación y definición (DOC, F1, F2) antes de código (F3+)**. El prototipo WinForms `test2` permanece congelado.
+Orden: **DOC + F1 + F2 + F3-01 hechos**. Siguiente: **F3-02**. El prototipo WinForms `test2` permanece congelado (sin features).
 
 ## 4.0 — MVP usable en ambos modos
 
@@ -16,12 +16,12 @@ Incluye:
 - Mantenimiento nativo (con confirmación): temporales, cachés, papelera; DISM / SFC; CHKDSK solo advertido.
 - Red: IP, DNS, gateway, ping, tracert, flush DNS, renovar DHCP, conectividad básica.
 - Reportes: un informe por sesión (texto/HTML), OK / aviso / fallo y recomendaciones.
-- Herramientas externas (lanzamiento): AdwCleaner, Microsoft Safety Scanner, Autoruns. HijackThis solo si F1 confirma vigencia, con alerta de falsos positivos.
+- Herramientas externas (lanzamiento): AdwCleaner, Microsoft Safety Scanner, Autoruns. HijackThis en **4.1** (F1 vigente + alerta de falsos positivos). Norton Power Eraser **fuera** (EOL 2026-04-30).
 - Modos Hogar y Técnico: mismas pantallas, distinta densidad; flujo «diagnóstico completo» en Técnico.
 
 No incluye: auto-updater de portables, instalador MSI pulido, LiveCD, edición empresarial, embebido masivo de antivirus.
 
-Backlog: **F3**. No se abre hasta que visión, arquitectura y catálogo vigente estén firmes (DOC + F1 + F2).
+Backlog: **F3**. DOC + F1 + F2 están firmes; F3 es la siguiente fase.
 
 ## 4.1 — Motor de herramientas
 

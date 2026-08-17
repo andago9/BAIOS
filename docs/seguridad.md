@@ -1,51 +1,46 @@
 # Seguridad de BAIOS 4
 
-Esqueleto. Política pública resumida en [`SECURITY.md`](../SECURITY.md). Decisiones de permisos en [F2-04](backlog.md).
+Política pública: [`SECURITY.md`](../SECURITY.md). Permisos **cerrados** en F2-04.
 
 ## Principio
 
-BAIOS ejecuta acciones privilegiadas y lanza binarios de terceros. Debe ser más cuidadoso que un launcher: integridad, elevación mínima, y no entrenar al usuario a desactivar Defender «por defecto».
+Elevar solo lo necesario. No entrenar a desactivar Defender por defecto. Integridad de binarios de terceros en 4.1 (sha256).
 
-## Permisos
+## Permisos (F2-04)
 
-| Acción | Admin |
-| --- | --- |
-| Dashboard de lectura (WMI básico, espacio, estado Defender) | No obligatorio |
-| Análisis Defender, DISM, SFC, CHKDSK, flush DNS / DHCP según política | Sí |
-| Portables del núcleo (AdwCleaner, MSERT, Autoruns) | Según ficha (`requiresAdmin`) |
+| Acción | Admin | Notas |
+| --- | --- | --- |
+| Dashboard de lectura (espacio, estado Defender, IP) | No | Si WMI falla, marcar aviso |
+| Análisis Defender (`MpCmdRun`) | Sí | UAC al pulsar |
+| DISM, SFC | Sí | Confirmación en UI |
+| CHKDSK | Sí | Advertencia de reinicio |
+| Flush DNS / ipconfig /renew | Sí en la práctica | Encapsulado; si falla sin admin, explicarlo |
+| AdwCleaner, MSERT | Sí (`requiresAdmin`) | Ficha |
+| Autoruns | Sí recomendado | Sin admin, vista incompleta |
+| Abrir URL online | No | Navegador del usuario |
 
-Si falta elevación: marcar en UI qué no se puede hacer; no fallar en silencio. UAC explícito; no un servicio residente en 4.0.
+Sin servicio residente en 4.0. Si falta elevación: la UI lista qué no se puede hacer; no fallar en silencio.
 
-## Integridad de herramientas (4.1)
+## Integridad (4.1)
 
-- Descargar solo URLs del manifiesto.
-- Verificar sha256 antes de ejecutar.
-- No ejecutar si el hash falla.
-- Registrar el evento en log.
+- Solo URLs del manifiesto.
+- sha256 antes de ejecutar.
+- Fallo de hash: no ejecutar + log.
 
-4.0: el usuario aporta el binario o se documenta la URL oficial; no hay canal de update.
+4.0: el usuario aporta el binario o se documenta la URL; no hay canal de update.
 
-## Descargas
+## Descargas y terceros
 
-HTTPS. No embebidos masivos de antivirus en el repo (el prototipo v3 tenía duplicados en `Resources/`; no repetir). LiveCD: nunca ISO dentro de BAIOS.
+HTTPS. No embebidos masivos de AV en el repo. LiveCD: nunca ISO en BAIOS.
 
-## Ejecución de terceros
+Al lanzar: fabricante, versión si se conoce, EULA. Aviso de falsos positivos (HijackThis en 4.1; genérico: no borrar a ciegas). Capturar código de salida; no parsear UI ajena.
 
-- Mostrar fabricante, versión, EULA.
-- Aviso de falsos positivos (HijackThis y genérico: no borrar a ciegas).
-- No recomendar desactivar Defender de forma permanente. Si una herramienta lo pide, aviso puntual y restaurar.
-- Capturar código de salida; no parsear UI ajena salvo que F2 lo defina.
+## Datos
 
-## Datos y reportes
+Hostname y hardware en el informe. Sin telemetría ni cuentas en 4.0.
 
-Hostname y hardware en el informe. Sin telemetría en 4.0. Sin cuentas. Ver [reportes](reportes.md).
+## Código
 
-## Código y suministro
+Motor: GPL-3.0. Vulnerabilidades del **launcher/motor** a [blinter.baios@gmail.com](mailto:blinter.baios@gmail.com). Las de AdwCleaner/Defender van al fabricante.
 
-- Licencia del motor: GPL-3.0. Terceros: la suya.
-- No versionar secretos ni binarios de AV.
-- Reportar vulnerabilidades del **motor BAIOS** (no de AdwCleaner, Defender, etc.) según [`SECURITY.md`](../SECURITY.md).
-
-## Versiones soportadas (producto)
-
-Hasta que exista un 4.0 publicado, **ninguna versión de producción recibe parches**. El prototipo 6 Alpha / `test2` está congelado y no es una línea soportada.
+Hasta publicar 4.0, **ninguna línea de producción recibe parches**. `test2` / 6 Alpha no es versión soportada.

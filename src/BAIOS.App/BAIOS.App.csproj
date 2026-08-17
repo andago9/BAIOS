@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>BAIOS</AssemblyName>
+    <RootNamespace>BAIOS.App</RootNamespace>
+    <ApplicationTitle>BAIOS</ApplicationTitle>
+    <Version>4.0.0-dev</Version>
+    <Product>BAIOS</Product>
+    <Company>Andago</Company>
+    <Copyright>Copyright © Andago</Copyright>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAIOS.Core\BAIOS.Core.csproj" />
+    <ProjectReference Include="..\BAIOS.Config\BAIOS.Config.csproj" />
+    <ProjectReference Include="..\BAIOS.Security\BAIOS.Security.csproj" />
+    <ProjectReference Include="..\BAIOS.Diagnostics\BAIOS.Diagnostics.csproj" />
+    <ProjectReference Include="..\BAIOS.Maintenance\BAIOS.Maintenance.csproj" />
+    <ProjectReference Include="..\BAIOS.Networking\BAIOS.Networking.csproj" />
+    <ProjectReference Include="..\BAIOS.Tools\BAIOS.Tools.csproj" />
+    <ProjectReference Include="..\BAIOS.Reports\BAIOS.Reports.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
