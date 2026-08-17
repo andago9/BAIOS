@@ -84,22 +84,11 @@ Entra: dashboard de estado, Defender, inventario y SMART cuando sea accesible, m
 
 No entra: auto-updater de portables, instalador MSI pulido, LiveCD, edición empresarial, embebido masivo de antivirus. Ver [roadmap](roadmap.md).
 
-## Código actual (BAIOS 3 / 6 Alpha)
+## Código histórico (BAIOS 3 / 6 Alpha)
 
-El código de [`BAIOS/test2`](../BAIOS/test2.sln) **se congela para features**. Admite higiene (compilar, `.gitignore`, quitar código muerto). No es el producto 4.0.
+El prototipo WinForms `test2` se **retiró del árbol** en F5-06. La historia queda en git y en [`docs/archive/`](archive/). El producto 4.x vive solo en [`src/BAIOS.sln`](../src/BAIOS.sln).
 
-| Pieza | Realidad |
-| --- | --- |
-| Stack | C# Windows Forms, .NET Framework 4.7.2 |
-| Solución | prototipo `test2` |
-| Formularios presentes | Bienvenida, Acuerdo, Menú, Ejecutables |
-| Formularios ausentes | Online y Portables (`Form4` / `Form5`) nunca tuvieron fuente; las referencias muertas se eliminaron en higiene v3 |
-| Versión en UI | `VERSION: 6 Alpha` |
-| Ensamblado | `1.0.0.0` |
-| Último changelog histórico | v3 (julio 2022) |
-| Licencia del repo | GNU GPL v3 |
-
-El backlog Lite (P0–P3) está **archivado** en [backlog.md](backlog.md), salvo higiene hecha: P3-01 (`.gitignore`) y P3-06 (handlers huérfanos). No se restauran Form4/Form5.
+El backlog Lite (P0–P3) está **archivado** en [backlog.md](backlog.md). No se restauran Form4/Form5.
 
 ## Documentos de BAIOS 4
 
@@ -114,6 +103,7 @@ El backlog Lite (P0–P3) está **archivado** en [backlog.md](backlog.md), salvo
 | [06. Reportes](reportes.md) | Generación y exportación |
 | [07. Seguridad](seguridad.md) | Admin, hashes, descargas |
 | [08. Roadmap](roadmap.md) | 4.0 / 4.1 / 4.2 |
+| [Manual de usuario](usuario.md) | Instalación, modos, Tools, Rescue (F5-05) |
 | [Backlog](backlog.md) | Trabajo por fases |
 
 ## Entorno de desarrollo

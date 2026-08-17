@@ -45,7 +45,7 @@ Microsoft Defender no es ficha de portable: es módulo nativo del motor.
 | VirusTotal | vigente | Enlace modo Técnico | n/a |
 | Jotti / Hybrid Analysis | vigente | Enlace Técnico opcional | n/a |
 | Panda Cloud Cleaner | alternativa | No núcleo; no enlace 4.0 | n/a |
-| LiveCD / Rescue | vigente (solo URLs) | 4.2+; nunca ISO embebidas | n/a |
+| LiveCD / Rescue | vigente (solo URLs) | 4.2; nunca ISO embebidas | n/a |
 
 ---
 
@@ -254,22 +254,29 @@ No hay pantallas Form4/Form5. En 4.0/4.1: **enlaces en modo Técnico** (el naveg
 
 ---
 
-## LiveCD / Rescue (F1-05 cerrado)
+## LiveCD / Rescue (F5-03)
 
-Destino **4.2+** ([F5-03](backlog.md)): catálogo de **enlaces oficiales**, nunca ISO dentro de BAIOS ni del repo.
+Destino **4.2**: catálogo de **enlaces oficiales** en modo Técnico (`rescue.json`). Nunca ISO dentro de BAIOS ni del repo.
 
-Listado histórico a revalidar URL por URL en F5 (pueden haber cambiado de nombre o desaparecido):
+Vigentes (página del fabricante; BAIOS no descarga el medio):
 
-- Avira Rescue System
-- Comodo Rescue Disk
-- Dr.Web LiveDisk
-- ESET SysRescue Live
-- Kaspersky Rescue Disk
-- Norton Bootable Recovery Tool
-- Panda Rescue / Cloud Cleaner bootable
-- Sophos Bootable Anti-Virus
-- Trend Micro Rescue Disk
-- VBA32 Rescue
+| Nombre | URL |
+| --- | --- |
+| Kaspersky Rescue Disk | <https://www.kaspersky.com/downloads/free-rescue-disk> (en EE. UU. puede no estar disponible) |
+| Dr.Web LiveDisk | <https://free.drweb.com/aid_admin> |
+| Avira Rescue System | [artículo de soporte](https://support.avira.com/hc/en-us/articles/360007776058-Creating-and-using-Avira-Rescue-System) |
+| VBA32 Rescue | <https://www.anti-virus.by/en/> |
+
+Abandonados / no listar como descarga:
+
+| Nombre | Nota |
+| --- | --- |
+| ESET SysRescue Live | EOL 2023-09-29. Queda ESET Online Scanner. |
+| Trend Micro Rescue Disk | Discontinuado 2025-04-25. |
+| Sophos Bootable Anti-Virus | Retirado ~2022. HitmanPro sigue como portable 4.1. |
+| Comodo Rescue Disk | ISO histórica (~2013); la ayuda de CIS no sustituye un producto vivo. |
+| Norton Bootable Recovery Tool | Alineado con el retiro de Norton PE (EOL). |
+| Panda Rescue / Cloud Cleaner bootable | Sin URL oficial clara; no promover. |
 
 ---
 

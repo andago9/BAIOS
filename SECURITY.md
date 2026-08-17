@@ -4,12 +4,12 @@ La política de producto está en [docs/seguridad.md](docs/seguridad.md) (permis
 
 ## Versiones soportadas
 
-Ninguna línea de producción recibe parches todavía: BAIOS 4 no está publicado y el prototipo **6 Alpha / `test2` (BAIOS 3)** está congelado.
+Ninguna línea de producción recibe parches todavía: BAIOS 4 no está publicado. El prototipo **6 Alpha / `test2` (BAIOS 3)** se retiró del árbol (F5-06).
 
 | Versión | Soporte |
 | --- | --- |
 | 4.x (planificado) | Aún no publicado |
-| 6 Alpha / test2 | No |
+| 6 Alpha / test2 | No (retirado del árbol) |
 | BAIOS 3 y anteriores | No |
 
 La tabla de ejemplo 5.1 / 4.0 de la plantilla de GitHub no aplica a este repo.

@@ -1,5 +1,7 @@
 {
   "modeDefault": "Home",
   "toolsPath": "Tools",
-  "reportsPath": "Reports"
+  "reportsPath": "Reports",
+  "manifestUrl": "",
+  "engineUrl": ""
 }

@@ -1,0 +1,48 @@
+<UserControl x:Class="BAIOS.App.Views.ShellView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DockPanel>
+        <Border DockPanel.Dock="Bottom" Background="{StaticResource SurfaceBrush}" Padding="12,8">
+            <Grid>
+                <TextBlock Text="{Binding Status}" Foreground="{StaticResource MutedBrush}" VerticalAlignment="Center"/>
+                <Button HorizontalAlignment="Right" Style="{StaticResource GhostButton}" Content="Cancelar flujo"
+                        Command="{Binding CancelFlowCommand}"
+                        Visibility="{Binding IsBusy, Converter={StaticResource BoolToVis}}"/>
+            </Grid>
+        </Border>
+        <Border DockPanel.Dock="Left" Width="200" Background="{StaticResource SurfaceBrush}" Padding="12">
+            <DockPanel>
+                <StackPanel DockPanel.Dock="Bottom">
+                    <TextBlock FontSize="12" Foreground="{StaticResource MutedBrush}" Text="{Binding ModeLabel}"/>
+                    <TextBlock FontSize="12" Foreground="{StaticResource MutedBrush}" Text="{Binding ElevationLabel}"/>
+                    <Button Margin="0,12,0,0" Style="{StaticResource GhostButton}" Content="Cambiar modo"
+                            Command="{Binding ChangeModeCommand}"/>
+                    <Button Style="{StaticResource GhostButton}" Content="Acerca de"
+                            Command="{Binding AboutCommand}"/>
+                </StackPanel>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="8,4,8,16">
+                        <Image Source="/Assets/logo.png" Width="28" Height="28" Margin="0,0,8,0"/>
+                        <TextBlock FontSize="20" FontWeight="SemiBold" VerticalAlignment="Center" Text="BAIOS"/>
+                    </StackPanel>
+                    <Button Style="{StaticResource NavButton}" Content="Inicio" Command="{Binding NavigateCommand}" CommandParameter="home"/>
+                    <Button Style="{StaticResource NavButton}" Content="Seguridad" Command="{Binding NavigateCommand}" CommandParameter="security"/>
+                    <Button Style="{StaticResource NavButton}" Content="Diagnóstico" Command="{Binding NavigateCommand}" CommandParameter="diagnostics"/>
+                    <Button Style="{StaticResource NavButton}" Content="Mantenimiento" Command="{Binding NavigateCommand}" CommandParameter="maintenance"/>
+                    <Button Style="{StaticResource NavButton}" Content="Red" Command="{Binding NavigateCommand}" CommandParameter="network"/>
+                    <Button Style="{StaticResource NavButton}" Content="Herramientas" Command="{Binding NavigateCommand}" CommandParameter="tools"/>
+                    <Button Style="{StaticResource NavButton}" Content="Reportes" Command="{Binding NavigateCommand}" CommandParameter="reports"/>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+        <Grid>
+            <ContentControl Margin="20" Content="{Binding Section}"/>
+            <Border Background="#88000000" Visibility="{Binding IsBusy, Converter={StaticResource BoolToVis}}">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock Text="Trabajando…" FontSize="18" HorizontalAlignment="Center"/>
+                    <TextBlock Margin="0,8,0,0" Foreground="{StaticResource MutedBrush}" Text="{Binding Status}"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </DockPanel>
+</UserControl>

@@ -1,0 +1,29 @@
+<UserControl x:Class="BAIOS.App.Views.ReportsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top" LastChildFill="False" Margin="0,0,0,12">
+            <TextBlock FontSize="24" FontWeight="SemiBold" Text="Reportes"/>
+            <Button DockPanel.Dock="Right" Content="Guardar informe de sesión" Command="{Binding SaveCommand}"/>
+            <Button DockPanel.Dock="Right" Style="{StaticResource GhostButton}" Content="Abrir carpeta" Command="{Binding OpenFolderCommand}"/>
+            <Button DockPanel.Dock="Right" Style="{StaticResource GhostButton}" Content="Actualizar" Command="{Binding ReloadCommand}"/>
+        </DockPanel>
+        <TextBlock DockPanel.Dock="Top" Margin="0,0,0,12" Foreground="{StaticResource MutedBrush}" TextWrapping="Wrap"
+                   Text="HTML canónico y TXT gemelo. El flujo Técnico termina aquí de forma explícita."/>
+        <DataGrid ItemsSource="{Binding Reports}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Archivo" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="Fecha" Binding="{Binding Written}" Width="180"/>
+                <DataGridTemplateColumn Header="" Width="120">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Style="{StaticResource GhostButton}" Content="Abrir HTML" Margin="0"
+                                    Command="{Binding DataContext.OpenHtmlCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}"
+                                    CommandParameter="{Binding}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+</UserControl>

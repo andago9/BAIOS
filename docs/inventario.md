@@ -6,7 +6,7 @@ Este archivo **nombra** programas y evidencias. No versiona binarios, ISOs ni lo
 
 No mezclar con [backlog.md](backlog.md): el backlog sigue siendo F1–F5. Hashes, EULA y URLs oficiales viven en el catálogo cuando el programa se conserve.
 
-Última tanda clasificada: **notepad-15** (Historial de repositorio 31/08/2020 = notepad-07). Versiones 01–10 ya están en créditos; 11–47 ya estaban.
+Última tanda clasificada: **notepad-16** (iconos/Pexels, «eset si / panda si», EXIF/MalwareTracker/MetaDefender, manifiesto elhacker.net, Jotti/Dr.Web).
 
 ## Leyenda
 
@@ -25,7 +25,7 @@ Conteos de filas clasificadas (no incluye bandeja ni el apartado «no son progra
 | en_uso | 12 |
 | pendiente | 50 |
 | desuso | 79 |
-| duplicado | 38 |
+| duplicado | 39 |
 
 ## En uso
 
@@ -41,7 +41,7 @@ Lo que el prototipo lanza o que 4.0/4.1 conservará. Los online **no son binario
 | ZHPCleaner | historial repo 2021.8.24.323 fab. 24/08/2021 | en_uso | conservar | sí | notepad-01 | 4.1+. Descarga solo nicolascoolman (.eu / .com). |
 | Spybot Search & Destroy | ficha 11; 2.7.64.0; 31/3/2020; Baios 05/jan/2021 (notepad-04) | en_uso | conservar | sí | notepad-01 | 4.1+. Notepad-02 lo marca «no portable». La carpeta Beta es el mismo producto. |
 | Emsisoft Emergency Kit | ficha 10; 2020.3.2.10048; remediation-kit (notepad-02/08) | en_uso | conservar | sí | notepad-01 | 4.1+. El hub «remediation-kit» es la misma familia, no otro producto. |
-| ESET Online Scanner | 21. Eset Online; hub de utilidades ESET (notepad-02) | en_uso | conservar | sí | notepad-01 | Enlace Técnico (F1-06). No guardar instalador ni ISO SysRescue. |
+| ESET Online Scanner | 21. Eset Online; notepad-16: «eset si» | en_uso | conservar | sí | notepad-01 | Enlace Técnico (F1-06). Confirmado en notas. No guardar instalador ni ISO. |
 | VirusTotal | 25. Virus Total; «virus total online scanner» (notepad-03) | en_uso | conservar | sí | notepad-01 | Enlace Técnico. Carga de archivos; no binario local. |
 | Hybrid Analysis | 30. Hybrid Analysis | en_uso | conservar | sí | notepad-01 | Enlace Técnico opcional. No binario local. |
 | Jotti | 31. VirusScan (jotti.org) | en_uso | conservar | sí | notepad-01 | Enlace Técnico opcional. No binario local. |
@@ -53,7 +53,7 @@ Aparece en notas o en disco; vigencia o utilidad dudosa. No borrar de los 10 GB 
 | Nombre | Evidencia | Estado | Acción | Catálogo | Origen | Nota |
 | --- | --- | --- | --- | --- | --- | --- |
 | Malwarebytes (instalador) | ficha 08; 4.1.0.56; 31/03/2020; Baios 05/jan/2021; `09. Malwarebytes.exe` 2.02 MB ×2 (notepad-12) | pendiente | revisar | sí | notepad-01 | 4.1+ opcional. Conservar **una** copia; borrar el duplicado `(1)`. Distinto de AdwCleaner. |
-| Panda (online) | 23. Panda | pendiente | revisar | sí | notepad-01 | Catálogo: alternativa; confirmar si el producto sigue existiendo (F1-06). |
+| Panda (online) | 23. Panda; notepad-16: «panda si» | pendiente | revisar | sí | notepad-01 | Catálogo: alternativa (no enlace 4.0). Las notas lo marcan sí como enlace; no promover a núcleo hasta F1. |
 | SpyShelter | spyshelter.com (anotado junto a bitdefender) | pendiente | revisar | ficha nueva | notepad-01 | No está en el catálogo. No es Bitdefender. |
 | SUPERAntiSpyware | 13. SUPERAntiSpyware; free-edition.html (notepad-03) | pendiente | revisar | ficha nueva | notepad-01 | No está en el catálogo ni en el menú v3 documentado. |
 | SpywareBlaster | 18. SpywareBlaster; brightfort.com (notepad-03) | pendiente | revisar | ficha nueva | notepad-01 | No está en el catálogo. |
@@ -94,7 +94,7 @@ Aparece en notas o en disco; vigencia o utilidad dudosa. No borrar de los 10 GB 
 | nProtect | onlinesecurity.nprotect.com (notepad-02) | pendiente | revisar | ficha nueva | notepad-02 | Escáner online. |
 | Enigma Software | enigmasoftware.es/productos; «no portable» (notepad-02) | pendiente | revisar | ficha nueva | notepad-02 | SpyHunter y similares. Notepad: no portable. |
 | BKAV | BKAV (notepad-02) | pendiente | revisar | ficha nueva | notepad-02 | Marca sin URL de herramienta concreta. |
-| Enlaces Técnico extra | Metadefender/Meta Scan, Virscan, Kaspersky online; sandboxes (Any.Run, Joe, Intezer, Cape, Cuckoo, Comodo IMA, SandBlast); URL Void/Norton Safe Web/Sucuri/PhishTank; Diario/Metashield/Iris-H; Process Library/Alegsa (notepad-05) | pendiente | revisar | ficha nueva | notepad-05 | Solo **enlaces**, no binarios. F1-06 ya cubre VT/ESET/Jotti/Hybrid. No reabrir Form4. |
+| Enlaces Técnico extra | Metadefender (opswat.com); Virscan; Kaspersky online; sandboxes; URL Void; Diario/Metashield/Iris-H; malwaretracker.com/doc.php; exif.regex.info (notepad-05/16) | pendiente | revisar | ficha nueva | notepad-05 | Solo **enlaces**, no binarios. F1-06 ya cubre VT/ESET/Jotti/Hybrid. No reabrir Form4. |
 | Removal tools extra | MSRT (Microsoft), Sophos VRT, F-Secure Easy Clean, Norman Malware Cleaner, Avira Removal Tool, Kaspersky Security Scan (notepad-05) | pendiente | revisar | ficha nueva | notepad-05 | Distintos de KVRT y de CCE. MSRT es Microsoft; el resto a confirmar portable vs instalador. |
 | Rogue extras | RKill, Unhide, ERA Remover, Remove Fake AV (notepad-05) | pendiente | revisar | ficha nueva | notepad-05 | Clásicos de técnico. RogueKiller ya tiene fila. No embeber packs. |
 | MBR / rootkit extra | aswMBR, Rootkit Revealer, F-Secure BlackLight, Bootkit Removal, MBR Fix (notepad-05) | pendiente | revisar | ficha nueva | notepad-05 | GMER y TDSSKiller ya tienen fila. Muchos están abandonados. |
@@ -233,6 +233,7 @@ Misma marca o la misma lista copiada otra vez. No son programas distintos.
 | Ejecutables 08–16 otra vez | Malwarebytes, ClamWin, EEK, Spybot, Vipre, MSERT, Zemana, CureIt, Immunet, Adaware, InfoSpyware, ssdm2pro, CCE, FRST, GMER (notepad-13) | duplicado | borrar | — | notepad-13 | Igual que notepad-12 sin tamaños de disco. |
 | Taxonomía notepad-14 | Servicios Online, Live CD, Seguridad, Redes, Análisis (notepad-05/06 otra vez) | duplicado | borrar | — | notepad-14 | Hiren/YouTube ya en desuso. Autoruns ya es núcleo. Lo nuevo está en las filas forense/navegadores/unlock. |
 | Historial repo otra vez | Portables 01–10 + ejecutables/online/instaladores 11–47 (notepad-15 = notepad-07) | duplicado | borrar | — | notepad-15 | Versiones ya en [creditos.md](creditos.md). |
+| Jotti / Dr.Web ES | virusscan.jotti.org/es; drweb-av.es (notepad-16) | duplicado | borrar | — | notepad-16 | Jotti ya en uso. drweb-av.es es el sitio del instalador (desuso). |
 
 ## Árbol Full (`CD_Root`) — notepad-12
 
@@ -320,6 +321,8 @@ Bookmarks de labs, rankings y blogs. No lanzan nada; no ocupan ficha. Si hay cap
 - Hiren's (notepad-05): `youtube.be/1AoJJ5YbkzQ` es un vídeo, no una ISO oficial. No sustituye fuente de fabricante.
 - Consolidar changelog / créditos / README (notepad-12): ya hecho en [changelog.md](changelog.md), [creditos.md](creditos.md) y [README.md](../README.md). El flujo AutoPlay (bienvenida → acuerdo → menú Portables/Ejecutables/Online, «desactivar Defender») es herencia v2; no se restaura. Defender no se apaga.
 - Tutoriales (notepad-14): modo seguro, BSOD, hosts, cheat sheets, guías AVZ/OTL/Procmon. Son documentación externa, no binarios. No copiar foros enteros al repo.
+- Manifiesto Staff elhacker.net (notepad-16): pack de foro (XP–W10, móvil, forense, LiveCD, stego, drivers). **No es la visión BAIOS 4** ([vision.md](vision.md)). Windows 9 no existe; XP no entra.
+- Assets UI (notepad-16): IconArchive (iconsmind), Pexels, Radial Chart Image Generator. Diseño, no kit. Atribución si se usaron: [creditos.md](creditos.md) (hoy Flaticon).
 
 ## Bandeja de entrada
 
@@ -327,7 +330,7 @@ Pegar aquí cada notepad en crudo (un bloque por archivo). Tras clasificar la ta
 
 No pegar rutas absolutas de la máquina; si el notepad las trae, recortar a nombre de archivo o ruta relativa al unificar.
 
-**Estado:** vacía. Tandas notepad-01 a notepad-15 clasificadas (2026-08-17).
+**Estado:** vacía. Tandas notepad-01 a notepad-16 clasificadas (2026-08-17).
 
 ```
 (pegar el siguiente notepad debajo de esta línea)

@@ -1,0 +1,52 @@
+<Window x:Class="BAIOS.App.Views.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding Title}"
+        Height="560"
+        Width="640"
+        MinHeight="420"
+        MinWidth="480"
+        WindowStartupLocation="CenterOwner"
+        ShowInTaskbar="False"
+        Background="{StaticResource BgBrush}"
+        Icon="/Assets/app.ico">
+    <DockPanel Margin="24">
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Style="{StaticResource GhostButton}" Content="Ver log" Command="{Binding OpenLogCommand}"/>
+            <Button Style="{StaticResource GhostButton}" Content="Manual" Command="{Binding OpenGuideCommand}"/>
+            <Button Style="{StaticResource GhostButton}" Content="Actualizar motor"
+                    Command="{Binding UpdateEngineCommand}"
+                    Visibility="{Binding IsTechnician, Converter={StaticResource BoolToVis}}"/>
+            <Button Content="Cerrar" Click="Close_Click"/>
+        </StackPanel>
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Top">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Assets/logo.png" Width="56" Height="56" Margin="0,0,16,0"/>
+                    <StackPanel>
+                        <TextBlock FontSize="24" FontWeight="SemiBold" Text="{Binding Title}"/>
+                        <TextBlock Margin="0,4,0,0" Foreground="{StaticResource MutedBrush}" Text="{Binding Version}"/>
+                        <TextBlock Margin="0,4,0,0" Foreground="{StaticResource MutedBrush}" Text="{Binding EngineSummary}"/>
+                    </StackPanel>
+                </StackPanel>
+                <TextBlock Margin="0,16,0,0" TextWrapping="Wrap" Text="{Binding Body}"/>
+                <TextBlock Margin="0,12,0,0">
+                    <Hyperlink Command="{Binding OpenWebsiteCommand}">Sitio web</Hyperlink>
+                    <Run Text="  ·  "/>
+                    <Hyperlink Command="{Binding OpenForumCommand}">Foro (Issues)</Hyperlink>
+                    <Run Text="  ·  "/>
+                    <Hyperlink Command="{Binding OpenGplCommand}">GNU GPL v3</Hyperlink>
+                </TextBlock>
+                <TextBlock Margin="0,16,0,8" FontWeight="SemiBold" Text="Licencia del motor"/>
+            </StackPanel>
+            <ScrollViewer>
+                <TextBox IsReadOnly="True" TextWrapping="Wrap" AcceptsReturn="True"
+                         Background="{StaticResource SurfaceAltBrush}"
+                         BorderThickness="0"
+                         FontFamily="Consolas"
+                         FontSize="12"
+                         Text="{Binding LicenseText, Mode=OneWay}"/>
+            </ScrollViewer>
+        </DockPanel>
+    </DockPanel>
+</Window>

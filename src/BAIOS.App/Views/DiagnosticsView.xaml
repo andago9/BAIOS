@@ -1,0 +1,57 @@
+<UserControl x:Class="BAIOS.App.Views.DiagnosticsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top" LastChildFill="False" Margin="0,0,0,12">
+            <TextBlock FontSize="24" FontWeight="SemiBold" Text="Diagnóstico"/>
+            <Button DockPanel.Dock="Right" Content="Autoruns" Command="{Binding OpenAutorunsCommand}"/>
+            <Button DockPanel.Dock="Right" Style="{StaticResource GhostButton}" Content="Ver detalle"
+                    Command="{Binding ToggleDetailCommand}"
+                    Visibility="{Binding IsTechnician, Converter={StaticResource BoolToVisInvert}}"/>
+            <Button DockPanel.Dock="Right" Style="{StaticResource GhostButton}" Content="Actualizar" Command="{Binding RefreshCommand}"/>
+        </DockPanel>
+        <ScrollViewer>
+            <StackPanel>
+                <ItemsControl ItemsSource="{Binding SummaryLines}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Margin="0,0,0,4" Text="{Binding}"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+                <StackPanel Visibility="{Binding ShowTables, Converter={StaticResource BoolToVis}}">
+                    <TextBlock Margin="0,16,0,8" FontWeight="SemiBold" Text="Servicios automáticos detenidos"/>
+                    <DataGrid Height="140" ItemsSource="{Binding Snapshot.AutoStoppedServices}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Nombre" Binding="{Binding DisplayName}" Width="*"/>
+                            <DataGridTextColumn Header="Estado" Binding="{Binding Status}" Width="120"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <TextBlock Margin="0,16,0,8" FontWeight="SemiBold" Text="Procesos (memoria)"/>
+                    <DataGrid Height="140" ItemsSource="{Binding Snapshot.TopProcesses}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Proceso" Binding="{Binding Name}" Width="*"/>
+                            <DataGridTextColumn Header="PID" Binding="{Binding Id}" Width="80"/>
+                            <DataGridTextColumn Header="Working set" Binding="{Binding WorkingSetBytes}" Width="140"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <TextBlock Margin="0,16,0,8" FontWeight="SemiBold" Text="Inicio"/>
+                    <DataGrid Height="140" ItemsSource="{Binding Snapshot.StartupItems}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Nombre" Binding="{Binding Name}" Width="180"/>
+                            <DataGridTextColumn Header="Comando" Binding="{Binding Command}" Width="*"/>
+                            <DataGridTextColumn Header="Ubicación" Binding="{Binding Location}" Width="160"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <TextBlock Margin="0,16,0,8" FontWeight="SemiBold" Text="Drivers con problema"/>
+                    <DataGrid Height="120" ItemsSource="{Binding Snapshot.ProblemDrivers}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Dispositivo" Binding="{Binding Name}" Width="*"/>
+                            <DataGridTextColumn Header="Código" Binding="{Binding ErrorCode}" Width="80"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
+</UserControl>

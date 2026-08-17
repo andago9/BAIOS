@@ -1,0 +1,39 @@
+<UserControl x:Class="BAIOS.App.Views.MaintenanceView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ScrollViewer>
+        <StackPanel>
+            <TextBlock FontSize="24" FontWeight="SemiBold" Text="Mantenimiento"/>
+            <TextBlock Margin="0,8,0,16" Foreground="{StaticResource MutedBrush}" TextWrapping="Wrap"
+                       Text="Nada se ejecuta al abrir esta pantalla. Cada acción pide confirmación."/>
+            <Border Background="{StaticResource SurfaceBrush}" CornerRadius="8" Padding="16" Margin="0,0,0,12">
+                <StackPanel>
+                    <TextBlock FontWeight="SemiBold" Text="Temporales, cachés y papelera"/>
+                    <TextBlock Margin="0,6,0,12" TextWrapping="Wrap" Foreground="{StaticResource MutedBrush}"
+                               Text="Se listará qué se borra antes de continuar. Los archivos en uso se omiten."/>
+                    <Button HorizontalAlignment="Left" Content="Limpiar ahora" Command="{Binding CleanupCommand}"/>
+                </StackPanel>
+            </Border>
+            <Border Background="{StaticResource SurfaceBrush}" CornerRadius="8" Padding="16" Margin="0,0,0,12">
+                <StackPanel>
+                    <TextBlock FontWeight="SemiBold" Text="Reparación de imagen y archivos de sistema"/>
+                    <TextBlock Margin="0,6,0,12" TextWrapping="Wrap" Foreground="{StaticResource MutedBrush}"
+                               Text="DISM y SFC requieren administrador y pueden tardar mucho."/>
+                    <WrapPanel>
+                        <Button Content="DISM RestoreHealth" Command="{Binding DismCommand}"/>
+                        <Button Content="SFC /scannow" Command="{Binding SfcCommand}"/>
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+            <Border Background="{StaticResource SurfaceBrush}" CornerRadius="8" Padding="16" Margin="0,0,0,12">
+                <StackPanel>
+                    <TextBlock FontWeight="SemiBold" Text="CHKDSK"/>
+                    <TextBlock Margin="0,6,0,12" TextWrapping="Wrap" Foreground="{StaticResource MutedBrush}"
+                               Text="Advertencia: en el disco del sistema se programa para el próximo reinicio y puede durar bastante. No se usa /R."/>
+                    <Button HorizontalAlignment="Left" Content="Programar CHKDSK /F" Command="{Binding ChkdskCommand}"/>
+                </StackPanel>
+            </Border>
+            <TextBlock Margin="0,8,0,0" Text="{Binding Last}" TextWrapping="Wrap"/>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

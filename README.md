@@ -8,6 +8,7 @@ Un motor, dos modos (desde 4.0): **Hogar** (dashboard y acciones seguras) y **T�
 
 Documentación de producto:
 
+- [Manual de usuario](docs/usuario.md)
 - [Visión](docs/vision.md)
 - [Roadmap 4.0 / 4.1 / 4.2](docs/roadmap.md)
 - [Backlog](docs/backlog.md)
@@ -16,9 +17,7 @@ Documentación de producto:
 
 ## Estado del repositorio
 
-El código de **BAIOS 4** está en [`src/BAIOS.sln`](src/BAIOS.sln) (.NET 8, WPF). Esqueleto F3-01: ventana mínima, aún sin dashboard ni herramientas.
-
-El código en `BAIOS/test2` es el prototipo **BAIOS 3 / 6 Alpha** (WinForms, .NET Framework 4.7.2). Está **congelado**. No es BAIOS 4.
+El código está en [`src/BAIOS.sln`](src/BAIOS.sln) (.NET 8, WPF). El prototipo WinForms `test2` se retiró en F5-06 (historia en git y `docs/archive/`).
 
 Licencia del motor: [GNU GPL v3](LICENSE). Las herramientas de terceros conservan la suya.
 
@@ -32,25 +31,24 @@ dotnet build src/BAIOS.sln
 dotnet run --project src/BAIOS.App/BAIOS.App.csproj
 ```
 
-Publicación portable self-contained (`win-x64`):
+Publicación portable (Hogar + Technician Edition) e instalación en `%LOCALAPPDATA%\BAIOS`:
 
 ```text
-dotnet publish src/BAIOS.App/BAIOS.App.csproj -p:PublishProfile=win-x64
+powershell -File scripts/publish.ps1
+powershell -File scripts/install.ps1
 ```
 
-El ensamblado se llama `BAIOS.exe`, no `test2`.
+El ensamblado se llama `BAIOS.exe`.
 
-## Uso (producto 4.0)
+## Uso
 
-El flujo completo (acuerdo, modos, diagnóstico, reporte) se implementa en F3-02…F3-11. Hoy la app solo muestra que el motor 4.0 arranca.
+Arranque: bienvenida → acuerdo (si no aceptas, no entra al motor) → Hogar o Técnico → shell. Detalle: [manual de usuario](docs/usuario.md).
 
-El `.exe` del prototipo `test2` sigue el flujo antiguo (bienvenida → acuerdo → menú) y está incompleto.
+Coloca los binarios en `Tools/<id>/` o, si la ficha tiene URL https y `sha256` de 64 hex, usa **Instalar / Actualizar**. Un hash que no coincida impide instalar y ejecutar. `manifestUrl` en `config.json` refresca el manifiesto remoto. Cada lanzamiento deja una línea en `Tools/<id>/execution.log` (modo Técnico: **Ver log**).
 
 ## Requisitos
 
-**BAIOS 4:** Windows x64, SDK .NET 8 para compilar. El publish self-contained no pide instalar .NET en el PC de destino.
-
-**Prototipo test2:** .NET Framework 4.7.2. Mínimo histórico: 1 GB RAM, 4 GB de disco, 2 núcleos a 1,6 GHz.
+Windows x64. SDK .NET 8 para compilar. El publish self-contained no pide instalar .NET en el PC de destino.
 
 ## Contacto
 

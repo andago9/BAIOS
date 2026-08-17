@@ -1,0 +1,38 @@
+<Window x:Class="BAIOS.App.Views.CreditsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding Title}"
+        Height="420"
+        Width="520"
+        MinHeight="320"
+        MinWidth="420"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        Background="{StaticResource BgBrush}"
+        Icon="/Assets/app.ico">
+    <DockPanel Margin="24">
+        <Button DockPanel.Dock="Bottom" HorizontalAlignment="Right" Content="Cerrar" Click="Close_Click"/>
+        <StackPanel>
+            <TextBlock FontSize="24" FontWeight="SemiBold" Text="{Binding Title}"/>
+            <TextBlock Margin="0,16,0,0" TextWrapping="Wrap" Text="{Binding Body}"/>
+            <TextBlock Margin="0,20,0,0" TextWrapping="Wrap"
+                       Visibility="{Binding HasWebsite, Converter={StaticResource BoolToVis}}">
+                <Hyperlink Command="{Binding OpenWebsiteCommand}">Sitio web</Hyperlink>
+            </TextBlock>
+            <TextBlock Margin="0,8,0,0" TextWrapping="Wrap"
+                       Visibility="{Binding HasForum, Converter={StaticResource BoolToVis}}">
+                <Hyperlink Command="{Binding OpenForumCommand}">Foro (Issues)</Hyperlink>
+            </TextBlock>
+            <TextBlock Margin="0,8,0,0" TextWrapping="Wrap"
+                       Visibility="{Binding HasLicenseUrl, Converter={StaticResource BoolToVis}}">
+                <Hyperlink Command="{Binding OpenLicenseUrlCommand}">Licencia del fabricante</Hyperlink>
+            </TextBlock>
+            <TextBlock Margin="0,8,0,0" TextWrapping="Wrap"
+                       Visibility="{Binding ShowGpl, Converter={StaticResource BoolToVis}}">
+                Licencia del motor:
+                <Hyperlink Command="{Binding OpenGplCommand}">GNU GPL v3</Hyperlink>
+            </TextBlock>
+        </StackPanel>
+    </DockPanel>
+</Window>

@@ -1,0 +1,48 @@
+<UserControl x:Class="BAIOS.App.Views.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <DockPanel LastChildFill="False" Margin="0,0,0,16">
+                <TextBlock FontSize="24" FontWeight="SemiBold" Text="Inicio"/>
+                <Button DockPanel.Dock="Right" Content="{Binding PrimaryLabel}" Command="{Binding PrimaryCommand}"/>
+                <Button DockPanel.Dock="Right" Style="{StaticResource GhostButton}" Content="Actualizar" Command="{Binding RefreshCommand}"/>
+            </DockPanel>
+            <TextBlock Margin="0,0,0,16" Foreground="{StaticResource MutedBrush}" Text="{Binding Detail}" TextWrapping="Wrap"/>
+            <ItemsControl ItemsSource="{Binding Signals}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Width="200" Margin="0,0,12,12" Padding="14" Background="{StaticResource SurfaceBrush}" CornerRadius="8">
+                            <StackPanel>
+                                <TextBlock FontSize="12" Foreground="{Binding Severity, Converter={StaticResource SevBrush}}"
+                                           Text="{Binding Severity, Converter={StaticResource SevLabel}}"/>
+                                <TextBlock FontWeight="SemiBold" Text="{Binding Name}"/>
+                                <TextBlock Margin="0,6,0,0" TextWrapping="Wrap" Text="{Binding Summary}"/>
+                                <TextBlock Margin="0,6,0,0" FontSize="12" Foreground="{StaticResource MutedBrush}"
+                                           Text="{Binding Detail}" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <TextBlock FontWeight="SemiBold" Margin="0,8,0,8" Text="Alertas"/>
+            <ItemsControl ItemsSource="{Binding Alerts}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Margin="0,0,0,8" Padding="12" Background="{StaticResource SurfaceBrush}" CornerRadius="6">
+                            <StackPanel>
+                                <TextBlock Foreground="{Binding Severity, Converter={StaticResource SevBrush}}" Text="{Binding Name}"/>
+                                <TextBlock FontSize="12" Foreground="{StaticResource MutedBrush}" Text="{Binding Summary}" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

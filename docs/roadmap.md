@@ -2,7 +2,7 @@
 
 Fuente de producto: [visión](vision.md). Trabajo pendiente: [backlog](backlog.md).
 
-Orden: **DOC + F1 + F2 + F3-01 hechos**. Siguiente: **F3-02**. El prototipo WinForms `test2` permanece congelado (sin features).
+Orden: **DOC + F1–F5 hechos** (F5-07 fuera de alcance). El prototipo WinForms `test2` se retiró del árbol.
 
 ## 4.0 — MVP usable en ambos modos
 
@@ -21,25 +21,25 @@ Incluye:
 
 No incluye: auto-updater de portables, instalador MSI pulido, LiveCD, edición empresarial, embebido masivo de antivirus.
 
-Backlog: **F3**. DOC + F1 + F2 están firmes; F3 es la siguiente fase.
+Backlog: **F3** (cerrada).
 
 ## 4.1 — Motor de herramientas
 
 - Manifiesto JSON: nombre, versión, arquitectura, URL, sha256, categoría, admin, cómo interpretar la salida.
 - Descarga, verificación de integridad, versionado. Reemplazar una herramienta sin recompilar BAIOS.
-- Logs de ejecución.
-- Más fichas del [catálogo](catalogo.md) que F1 marque como vigentes.
+- Logs de ejecución (`Tools/<id>/execution.log`).
+- Fichas vigentes de F1-03 (HijackThis con alerta de falsos positivos; KVRT, HitmanPro, ZHPCleaner, EEK; Spybot y Malwarebytes como instaladores en Técnico).
 
-Backlog: **F4**. Ver [actualización](actualizacion.md) y [seguridad](seguridad.md).
+Backlog: **F4** (cerrada).
 
 ## 4.2 — Distribución y rescate
 
-- Instalador y actualizador del motor.
-- Perfil USB / Technician Edition como **empaquetado** del mismo código, no otro producto.
+- Instalador (copia a `%LOCALAPPDATA%\BAIOS`, sin MSI) y actualizador del motor (`engine.json` + sha256).
+- Perfil USB / Technician Edition como **empaquetado** del mismo código (`dist/BAIOS.Technician/`).
 - Rescue / LiveCD: catálogo de enlaces oficiales, no ISO embebidas.
-- Logs y UX de producto; documentación de usuario.
+- Logs y UX de producto; [documentación de usuario](usuario.md).
 
-Backlog: **F5**. Empresa: explícitamente más allá de 4.2.
+Backlog: **F5** (cerrada salvo F5-07 empresa). Ver [actualización](actualizacion.md) y [seguridad](seguridad.md).
 
 ## Fuera de alcance (hasta nuevo aviso)
 

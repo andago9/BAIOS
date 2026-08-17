@@ -23,11 +23,16 @@ Sin servicio residente en 4.0. Si falta elevación: la UI lista qué no se puede
 
 ## Integridad (4.1)
 
-- Solo URLs del manifiesto.
-- sha256 antes de ejecutar.
-- Fallo de hash: no ejecutar + log.
+- Solo URLs https del manifiesto.
+- sha256 del artefacto descargado **antes** de instalar; del ejecutable **antes** de lanzar (o del exe registrado si el hash publicado es del zip).
+- Fallo de hash: no instalar / no ejecutar + `Tools/integrity.log`.
+- Lanzamientos (éxito o no) en `Tools/<id>/execution.log`. HijackThis pide confirmación: los hallazgos suelen ser falsos positivos.
+- Sin sha256 en la ficha: no hay canal de descarga; un binario puesto a mano sí se puede lanzar.
 
-4.0: el usuario aporta el binario o se documenta la URL; no hay canal de update.
+## Integridad (4.2, motor)
+
+- `engine.json`: misma regla https + sha256. Fallo de hash: no aplicar; `logs/app.log`.
+- Arranque, modo y excepciones en `logs/app.log`.
 
 ## Descargas y terceros
 
@@ -43,4 +48,4 @@ Hostname y hardware en el informe. Sin telemetría ni cuentas en 4.0.
 
 Motor: GPL-3.0. Vulnerabilidades del **launcher/motor** a [blinter.baios@gmail.com](mailto:blinter.baios@gmail.com). Las de AdwCleaner/Defender van al fabricante.
 
-Hasta publicar 4.0, **ninguna línea de producción recibe parches**. `test2` / 6 Alpha no es versión soportada.
+Hasta publicar 4.0, **ninguna línea de producción recibe parches** en el sentido de un canal de soporte formal. El prototipo `test2` / 6 Alpha ya no está en el árbol.

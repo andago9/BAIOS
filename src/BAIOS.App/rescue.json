@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "kaspersky-rescue",
+      "name": "Kaspersky Rescue Disk",
+      "url": "https://www.kaspersky.com/downloads/free-rescue-disk",
+      "note": "Página oficial. En EE. UU. la descarga puede no estar disponible. BAIOS no descarga la ISO."
+    },
+    {
+      "id": "drweb-livedisk",
+      "name": "Dr.Web LiveDisk",
+      "url": "https://free.drweb.com/aid_admin",
+      "note": "Recuperación de emergencia en DVD o USB. BAIOS no descarga la ISO."
+    },
+    {
+      "id": "avira-rescue",
+      "name": "Avira Rescue System",
+      "url": "https://support.avira.com/hc/en-us/articles/360007776058-Creating-and-using-Avira-Rescue-System",
+      "note": "Artículo de soporte oficial (no la tienda de productos). BAIOS no descarga la ISO."
+    },
+    {
+      "id": "vba32-rescue",
+      "name": "VBA32 Rescue",
+      "url": "https://www.anti-virus.by/en/",
+      "note": "VirusBlokAda. Descarga solo desde el sitio del fabricante. BAIOS no descarga la ISO."
+    }
+  ]
+}

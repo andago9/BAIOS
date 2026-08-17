@@ -14,7 +14,7 @@ Decisiones **cerradas** en F2 (2026-08-17). Producto: [visión](vision.md). Perm
 
 **Por qué WPF y no WinUI 3:** USB/técnico sin Windows App SDK ni MSIX en 4.0. WinUI 3 queda como alternativa si en 4.2 se quiere Fluent + MSIX; no se reabre en F3 salvo bloqueo técnico de WPF.
 
-El prototipo `test2` (WinForms 4.7.2) **no** se evoluciona a esta estructura.
+El prototipo `test2` (WinForms 4.7.2) se retiró en F5-06; no se evoluciona a esta estructura.
 
 ## Estructura de solución (F2-02)
 
@@ -53,7 +53,7 @@ flowchart TB
 ## Comunicación
 
 - **Motor → SO:** WMI/CIM, APIs de Windows, `MpCmdRun` (Defender), `ipconfig`/`ping`/`tracert` encapsulados, DISM/SFC/CHKDSK con confirmación. Sin parsear UI de terceros.
-- **Motor → herramientas:** `ProcessStartInfo` (ruta, args, verb `runas` si `requiresAdmin`). 4.0: solo lanzar. 4.1: manifiesto + sha256.
+- **Motor → herramientas:** `ProcessStartInfo` (ruta, args, verb `runas` si `requiresAdmin`). 4.1: manifiesto local `Tools/<id>/`, descarga https + sha256 (F4-02).
 - **Motor → reportes:** lista de `Finding` (severidad OK / aviso / fallo). La UI y el HTML consumen el mismo modelo. Ver [reportes](reportes.md).
 - **Modos:** misma API; la UI cambia densidad y el flujo guiado.
 
@@ -63,7 +63,8 @@ Archivo `config.json` junto al exe (portable) o `%LOCALAPPDATA%\BAIOS\` si hay i
 
 - `modeDefault`: `Home` | `Technician`
 - `toolsPath`, `reportsPath`
-- 4.1: `manifestUrl` (opcional) y copia local `manifest.json`
+- 4.1: `manifestUrl` (https opcional) y copia local `manifest.json`
+- 4.2: `engineUrl` (https opcional) y `engine.json` (versión / download / sha256 del motor)
 
 ## Fuera de 4.0
 

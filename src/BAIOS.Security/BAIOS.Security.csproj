@@ -4,5 +4,6 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\BAIOS.Core\BAIOS.Core.csproj" />
+    <PackageReference Include="System.Management" Version="8.0.0" />
   </ItemGroup>
 </Project>

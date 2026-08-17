@@ -1,0 +1,103 @@
+<UserControl x:Class="BAIOS.App.Views.ToolsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top" LastChildFill="False" Margin="0,0,0,12">
+            <TextBlock FontSize="24" FontWeight="SemiBold" Text="Herramientas"/>
+            <Button DockPanel.Dock="Right" Style="{StaticResource GhostButton}" Content="Actualizar lista" Command="{Binding RefreshCommand}"/>
+            <Button DockPanel.Dock="Right" Style="{StaticResource GhostButton}" Content="Actualizar manifiesto"
+                    Command="{Binding RefreshManifestCommand}"
+                    Visibility="{Binding HasManifestUrl, Converter={StaticResource BoolToVis}}"/>
+        </DockPanel>
+        <TextBlock DockPanel.Dock="Top" Margin="0,0,0,8" Foreground="{StaticResource MutedBrush}" TextWrapping="Wrap"
+                   Text="{Binding ToolsPath, StringFormat=Repositorio local: {0} (una carpeta por id).}"/>
+        <TextBlock DockPanel.Dock="Top" Margin="0,0,0,12" Foreground="{StaticResource MutedBrush}" TextWrapping="Wrap"
+                   Text="{Binding ManifestSummary}"/>
+        <StackPanel DockPanel.Dock="Bottom" Visibility="{Binding IsTechnician, Converter={StaticResource BoolToVis}}" Margin="0,16,0,0">
+            <TextBlock FontWeight="SemiBold" Text="Enlaces (modo Técnico)"/>
+            <TextBlock Margin="0,8,0,0">
+                <Hyperlink Command="{Binding OpenUrlCommand}" CommandParameter="https://www.virustotal.com/">VirusTotal</Hyperlink>
+                <Run Text="  ·  "/>
+                <Hyperlink Command="{Binding OpenUrlCommand}" CommandParameter="https://www.eset.com/int/home/online-scanner/">ESET Online Scanner</Hyperlink>
+                <Run Text="  ·  "/>
+                <Hyperlink Command="{Binding OpenUrlCommand}" CommandParameter="https://virusscan.jotti.org/">Jotti</Hyperlink>
+                <Run Text="  ·  "/>
+                <Hyperlink Command="{Binding OpenUrlCommand}" CommandParameter="https://www.hybrid-analysis.com/">Hybrid Analysis</Hyperlink>
+            </TextBlock>
+            <TextBlock Margin="0,16,0,0" FontWeight="SemiBold" Text="Rescue / LiveCD"/>
+            <TextBlock Margin="0,4,0,8" Foreground="{StaticResource MutedBrush}" TextWrapping="Wrap"
+                       Text="BAIOS no descarga la ISO; abre la página oficial."/>
+            <ItemsControl ItemsSource="{Binding Rescue}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="0,0,0,8">
+                            <TextBlock>
+                                <Hyperlink Command="{Binding DataContext.OpenUrlCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                           CommandParameter="{Binding Url}">
+                                    <TextBlock Text="{Binding Name}"/>
+                                </Hyperlink>
+                            </TextBlock>
+                            <TextBlock FontSize="12" Foreground="{StaticResource MutedBrush}" TextWrapping="Wrap" Text="{Binding Note}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </StackPanel>
+        <ScrollViewer>
+            <ItemsControl ItemsSource="{Binding Tools}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Background="{StaticResource SurfaceBrush}" CornerRadius="8" Padding="16" Margin="0,0,0,12">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="40" Height="40" Margin="0,0,12,0" VerticalAlignment="Top"
+                                       Source="{Binding Icon}"
+                                       Visibility="{Binding HasIcon, Converter={StaticResource BoolToVis}}"/>
+                                <StackPanel Grid.Column="1">
+                                    <TextBlock FontSize="18" FontWeight="SemiBold" Text="{Binding Card.Name}"/>
+                                    <TextBlock Margin="0,4,0,0" Foreground="{StaticResource MutedBrush}" Text="{Binding Meta}"/>
+                                    <TextBlock TextWrapping="Wrap" Margin="0,8,0,0" Text="{Binding Card.Note}"/>
+                                    <TextBlock Margin="0,8,0,0" FontSize="12" Text="{Binding Status}" TextWrapping="Wrap"/>
+                                    <TextBlock Margin="0,4,0,0">
+                                        <Hyperlink Command="{Binding DataContext.OpenUrlCommand, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
+                                                   CommandParameter="{Binding Card.Url}">Manual / web</Hyperlink>
+                                        <Run Text="  ·  "/>
+                                        <Hyperlink Command="{Binding DataContext.OpenUrlCommand, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
+                                                   CommandParameter="{Binding Card.LicenseUrl}">Licencia</Hyperlink>
+                                        <Run Text="  ·  "/>
+                                        <Hyperlink Command="{Binding DataContext.OpenUrlCommand, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
+                                                   CommandParameter="{Binding Card.Download}">Descarga</Hyperlink>
+                                        <Run Text="  ·  "/>
+                                        <Hyperlink Command="{Binding DataContext.ShowCreditsCommand, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
+                                                   CommandParameter="{Binding}">Créditos</Hyperlink>
+                                    </TextBlock>
+                                </StackPanel>
+                                <StackPanel Grid.Column="2" VerticalAlignment="Top">
+                                    <Button Content="{Binding Card.HomeLabel}"
+                                            Command="{Binding DataContext.LaunchCommand, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
+                                            CommandParameter="{Binding}"/>
+                                    <Button Style="{StaticResource GhostButton}" Content="{Binding UpdateLabel}"
+                                            Command="{Binding DataContext.UpdateCommand, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
+                                            CommandParameter="{Binding}"
+                                            Visibility="{Binding CanDownload, Converter={StaticResource BoolToVis}}"/>
+                                    <Button Style="{StaticResource GhostButton}" Content="Ver log"
+                                            Command="{Binding DataContext.OpenLogCommand, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
+                                            CommandParameter="{Binding}"
+                                            Visibility="{Binding DataContext.IsTechnician, RelativeSource={RelativeSource AncestorType=ItemsControl}, Converter={StaticResource BoolToVis}}"/>
+                                    <Button Style="{StaticResource GhostButton}" Content="Abrir carpeta"
+                                            Command="{Binding DataContext.OpenFolderCommand, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
+                                            CommandParameter="{Binding}"
+                                            Visibility="{Binding DataContext.IsTechnician, RelativeSource={RelativeSource AncestorType=ItemsControl}, Converter={StaticResource BoolToVis}}"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </DockPanel>
+</UserControl>

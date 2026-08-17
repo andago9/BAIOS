@@ -7,7 +7,7 @@ Hay dos HTML de origen (mismo CSS / Bootstrap / html5-editor):
 - [`archive/Changelog-v3.html`](archive/Changelog-v3.html) — snapshot de **solo v3** (11 jul 2022): migración AutoPlay → Visual Studio, leyenda de tipos y pendientes. Sin historial previo. Pie «Copyright» a medias.
 - [`archive/Changelog.html`](archive/Changelog.html) — el mismo encabezado de v3 más el historial AutoPlay pegado debajo (duplicados, tabla vacía «Cell 2x2», una «versión 1.0.0» contaminada con 1.5.0–2.0.1).
 
-Las fechas de 0.0.1–1.x son inciertas: el HTML compilado copiaba bloques enteros. Si hay conflicto, gana la entrada más específica. Los pendientes no van aquí: están en el [backlog](backlog.md) (P0–P3 archivados; F1–F2 hechos; trabajo vivo F3–F5).
+Las fechas de 0.0.1–1.x son inciertas: el HTML compilado copiaba bloques enteros. Si hay conflicto, gana la entrada más específica. Los pendientes no van aquí: están en el [backlog](backlog.md) (P0–P3 archivados; F1–F5 hechos salvo F5-07 empresa).
 
 ## Tipos
 
@@ -27,7 +27,7 @@ Solo se listan las secciones que tienen entradas. No se rellenan categorías vac
 
 | Versión | Fecha | Edición / motor | Nota |
 | --- | --- | --- | --- |
-| [Unreleased](#unreleased) | — | BAIOS 4 (definición) | No publicado |
+| [Unreleased](#unreleased) | — | BAIOS 4 (F3–F5) | No publicado |
 | [6.0.1-alpha](#601-alpha) | — | Prototipo WinForms (`test2`) | Tag git `V6.0.1`; congelado |
 | [3](#3---2022-07-11) | 2022-07-11 | C# WinForms | Snapshot propio; última release histórica |
 | [2.1.2](#212---2022-04-13) | 2022-04-13 | Lite (AutoPlay) | |
@@ -44,7 +44,40 @@ Solo se listan las secciones que tienen entradas. No se rellenan categorías vac
 
 ## [Unreleased]
 
-Definición de **BAIOS 4** (visión, arquitectura, catálogo, roadmap). F1 y F2 cerrados (2026-08-17). **F3-01:** esqueleto [`src/BAIOS.sln`](../src/BAIOS.sln) (.NET 8 + WPF, `BAIOS.exe`). El prototipo `test2` no recibe features. Siguiente: F3-02. Detalle: [roadmap](roadmap.md) y [backlog](backlog.md).
+Definición de **BAIOS 4** (visión, arquitectura, catálogo, roadmap). F1–F5 cerrados (2026-08-17) salvo F5-07 (empresa). El prototipo `test2` se retiró del árbol. Detalle: [roadmap](roadmap.md) y [backlog](backlog.md).
+
+### Added
+
+- MVP 4.0 en [`src/BAIOS.sln`](../src/BAIOS.sln): bienvenida, acuerdo de uso, modos Hogar/Técnico (Técnico si USB o `modeDefault`), shell con Inicio, Seguridad, Diagnóstico, Mantenimiento, Red, Herramientas y Reportes.
+- Seguridad nativa: estado de Microsoft Defender y firewall; análisis rápido, completo y sin conexión si el SO lo permite (`MpCmdRun` / `Start-MpWDOScan`).
+- Diagnóstico nativo: hardware, volúmenes, SMART si WMI lo expone, servicios, procesos, inicio, drivers con error.
+- Mantenimiento con confirmación: temporales/cachés/papelera, DISM, SFC, CHKDSK `/F` advertido.
+- Red: IP, DNS, gateway, ping, tracert, flush DNS, renovar DHCP, conectividad.
+- Informe de sesión HTML + TXT; lanzamiento de AdwCleaner, Microsoft Safety Scanner y Autoruns desde `Tools/` (sin auto-update); flujo «diagnóstico completo» en Técnico.
+- Manifiesto `manifest.json` schema 1 y repositorio local `Tools/<id>/` (F4-01).
+- Descarga https, verificación sha256, `installed.json` y reemplazo de `Tools/<id>/` sin recompilar (F4-02). Hash incorrecto: no instalar ni ejecutar; `Tools/integrity.log`.
+- Log de ejecución por herramienta en `Tools/<id>/execution.log` (F4-03). En modo Técnico: **Ver log** y **Abrir carpeta**.
+- Fichas 4.1+ en el manifiesto: HijackThis, KVRT, HitmanPro, ZHPCleaner, EEK; instaladores Spybot y Malwarebytes (Técnico; Hogar sigue en el núcleo) (F4-04).
+- HijackThis: alerta Sí/No de falsos positivos antes de lanzar; si se cancela, queda en el log (F4-05).
+- Diálogo de créditos al cerrar (Andago, GPL-3.0, terceros, repo y foro) y botón Créditos por ficha.
+- Empaquetado portable y Technician Edition (`scripts/publish.ps1`), instalación en `%LOCALAPPDATA%\BAIOS` (`scripts/install.ps1`) y actualizador del motor con `engine.json` + sha256 (F5-01, F5-02).
+- Rescue / LiveCD: catálogo de enlaces oficiales en Técnico; nunca ISO (F5-03).
+- Log de aplicación `logs/app.log` y ventana **Acerca de** con GPL, velosergio y **Ver log** (F5-04).
+- [Manual de usuario](usuario.md) (F5-05).
+- Logo e icono del `.exe`; `icon.png` opcional por herramienta (F5-08).
+
+### Changed
+
+- Bienvenida: texto desde «Orquesta…» (sin «Motor 4.0 / .NET 8 / WPF») y enlace al sitio web del repo.
+- Acuerdo de uso: descargo de responsabilidad y enlace al foro (GitHub Issues).
+
+### Removed
+
+- Prototipo WinForms `BAIOS/test2` (F5-06). Historia en git y `docs/archive/`.
+
+### Fixed
+
+- Tras elegir Hogar o Técnico se puede **Cambiar modo** sin cerrar la aplicación; la sesión se conserva.
 
 ## [6.0.1-alpha]
 

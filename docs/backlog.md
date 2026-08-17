@@ -6,7 +6,7 @@ Leyenda de tipo (Keep a Changelog): **Add**, **Change**, **Fix**, **Upgrade**, *
 
 Estados: `pendiente` · `parcial` · `hecho` · `fuera_de_alcance_ahora` · `archivado`.
 
-Orden: **DOC + F1 + F2 + F3-01 hechos**. Siguiente: **F3-02** (modos). El prototipo `test2` no recibe features 4.0.
+Orden: **DOC + F1–F5 hechos** (F5-07 fuera de alcance). El prototipo `test2` se retiró del árbol.
 
 ## Hecho (no reabrir)
 
@@ -22,6 +22,11 @@ Orden: **DOC + F1 + F2 + F3-01 hechos**. Siguiente: **F3-02** (modos). El protot
 | DONE-08 | Fix | Higiene v3: `.gitignore`, sin `bin/`/`obj/`/`.vs` en git; código muerto Form4/Form5 y handlers vacíos. |
 | DONE-09 | Change | F1 catálogo vigente + F2 arquitectura/contratos cerrados (2026-08-17). |
 | DONE-10 | Add | F3-01: solución `src/BAIOS.sln` (.NET 8 + WPF). |
+| DONE-11 | Add | F3-02…F3-11: MVP 4.0 usable (modos, dashboard, módulos nativos, reporte, núcleo de herramientas). |
+| DONE-12 | Add | F4-01: manifiesto schema 1 y repositorio `Tools/<id>/`. |
+| DONE-13 | Add | F4-02: descarga https, sha256, versionado y reemplazo sin recompilar. |
+| DONE-14 | Add | F4-03…F4-05: logs de ejecución, fichas F1-03 en manifiesto, HijackThis con alerta de falsos positivos. |
+| DONE-15 | Add | F5-01…F5-06 y F5-08: empaquetado, Rescue, About/logs, manual, retiro de test2, identidad visual. |
 
 ## DOC — Definición (esta fase)
 
@@ -38,7 +43,7 @@ Orden: **DOC + F1 + F2 + F3-01 hechos**. Siguiente: **F3-02** (modos). El protot
 | DOC-09 | Add | Esqueleto [seguridad](seguridad.md) y alinear `SECURITY.md`. | hecho |
 | DOC-10 | Change | Alinear [README](../README.md) con la visión 4.0. | hecho |
 
-F1 y F2 cerrados. Probar binarios en un PC queda en F3-09 / F4-04, no reabre las tablas del catálogo.
+F1, F2 y F3 cerrados. Validar binarios de terceros en un PC no reabre las tablas del catálogo (F4-04).
 
 ## F1 — Rescate
 
@@ -66,43 +71,46 @@ Inventario ya extraído en el catálogo. Aquí se **confirma vigencia**, no se r
 | F2-05 | Add | Pantallas Hogar vs Técnico. | hecho |
 | F2-06 | Add | Esquema de reporte (Finding + secciones). | hecho |
 
-## F3 — MVP 4.0 (código; siguiente fase)
+## F3 — MVP 4.0 (cerrada, 2026-08-17)
 
 | ID | Tipo | Ítem | Estado |
 | --- | --- | --- | --- |
 | F3-01 | Add | Proyecto nuevo (no `test2`): [`src/BAIOS.sln`](../src/BAIOS.sln). | hecho |
-| F3-02 | Add | Selector de modo Hogar / Técnico (o default Técnico si se detecta perfil USB). | pendiente |
-| F3-03 | Add | Inicio: dashboard de estado del equipo. | pendiente |
-| F3-04 | Add | Seguridad nativa: Defender (estado, rápido, completo; offline si aplica). | pendiente |
-| F3-05 | Add | Diagnóstico nativo: hardware, disco/SMART, servicios, procesos, inicio, drivers. | pendiente |
-| F3-06 | Add | Mantenimiento nativo con confirmación: temporales, cachés, papelera; DISM; SFC; CHKDSK advertido. | pendiente |
-| F3-07 | Add | Red: IP, DNS, gateway, ping, tracert, flush DNS, DHCP, conectividad. | pendiente |
-| F3-08 | Add | Reporte de sesión texto/HTML. | pendiente |
-| F3-09 | Add | Lanzar AdwCleaner, Microsoft Safety Scanner, Autoruns (sin auto-update). | pendiente |
-| F3-10 | Add | Flujo «diagnóstico completo» en modo Técnico. | pendiente |
-| F3-11 | Add | Acuerdo de uso, aviso de no borrar a ciegas, alerta de falsos positivos (herencia útil de v3). | pendiente |
+| F3-02 | Add | Selector de modo Hogar / Técnico (o default Técnico si se detecta perfil USB). | hecho |
+| F3-03 | Add | Inicio: dashboard de estado del equipo. | hecho |
+| F3-04 | Add | Seguridad nativa: Defender (estado, rápido, completo; offline si aplica). | hecho |
+| F3-05 | Add | Diagnóstico nativo: hardware, disco/SMART, servicios, procesos, inicio, drivers. | hecho |
+| F3-06 | Add | Mantenimiento nativo con confirmación: temporales, cachés, papelera; DISM; SFC; CHKDSK advertido. | hecho |
+| F3-07 | Add | Red: IP, DNS, gateway, ping, tracert, flush DNS, DHCP, conectividad. | hecho |
+| F3-08 | Add | Reporte de sesión texto/HTML. | hecho |
+| F3-09 | Add | Lanzar AdwCleaner, Microsoft Safety Scanner, Autoruns (sin auto-update). | hecho |
+| F3-10 | Add | Flujo «diagnóstico completo» en modo Técnico. | hecho |
+| F3-11 | Add | Acuerdo de uso, aviso de no borrar a ciegas, alerta de falsos positivos (herencia útil de v3). | hecho |
 
-## F4 — Motor de herramientas (4.1)
+Probar binarios de terceros en un PC real sigue siendo validación de uso, no reabre F3-09.
+
+## F4 — Motor de herramientas (4.1; cerrada)
 
 | ID | Tipo | Ítem | Estado |
 | --- | --- | --- | --- |
-| F4-01 | Add | Manifiesto JSON y repositorio local de herramientas. | pendiente |
-| F4-02 | Add | Descarga, sha256, versionado; reemplazo sin recompilar. | pendiente |
-| F4-03 | Add | Logs de ejecución por herramienta. | pendiente |
-| F4-04 | Upgrade | Incorporar fichas F1-03 vigentes. | pendiente |
-| F4-05 | Add | HijackThis (F1 lo confirma vigente), con alerta de falsos positivos. | pendiente |
+| F4-01 | Add | Manifiesto JSON y repositorio local de herramientas. | hecho |
+| F4-02 | Add | Descarga, sha256, versionado; reemplazo sin recompilar. | hecho |
+| F4-03 | Add | Logs de ejecución por herramienta. | hecho |
+| F4-04 | Upgrade | Incorporar fichas F1-03 vigentes. | hecho |
+| F4-05 | Add | HijackThis (F1 lo confirma vigente), con alerta de falsos positivos. | hecho |
 
 ## F5 — Producto 4.0 / 4.2
 
 | ID | Tipo | Ítem | Estado |
 | --- | --- | --- | --- |
-| F5-01 | Add | Instalador y actualizador del motor. | pendiente |
-| F5-02 | Add | Perfil USB / Technician Edition (empaquetado, mismo código). | pendiente |
-| F5-03 | Add | Rescue: catálogo de enlaces LiveCD oficiales (no ISO embebidas). | pendiente |
-| F5-04 | Add | UX, logs de aplicación, About con GPL-3.0 y enlace a `LICENSE`. | pendiente |
-| F5-05 | Add | Documentación de usuario (sustituye el PDF de instalación perdido). | pendiente |
-| F5-06 | Change | Aplanar `BAIOS/BAIOS/` y retirar el prototipo `test2` cuando 4.0 compile. | pendiente |
+| F5-01 | Add | Instalador y actualizador del motor. | hecho |
+| F5-02 | Add | Perfil USB / Technician Edition (empaquetado, mismo código). | hecho |
+| F5-03 | Add | Rescue: catálogo de enlaces LiveCD oficiales (no ISO embebidas). | hecho |
+| F5-04 | Add | UX, logs de aplicación, About amplio con GPL-3.0 y enlace a `LICENSE`. El diálogo corto al salir (Andago, terceros, repo, foro) ya está. | hecho |
+| F5-05 | Add | Documentación de usuario (sustituye el PDF de instalación perdido). | hecho |
+| F5-06 | Change | Aplanar `BAIOS/BAIOS/` y retirar el prototipo `test2` cuando 4.0 compile. | hecho |
 | F5-07 | Add | Edición empresarial. | fuera_de_alcance_ahora |
+| F5-08 | Add | Identidad visual: logo BAIOS (velosergio) en bienvenida/ventana, icono del `.exe`. No embeber logos de AdwCleaner/MSERT/Autoruns (marca ajena); en 4.1 el manifiesto podrá apuntar a iconos locales opcionales. | hecho |
 
 ## Archivado — BAIOS 3 / Lite
 

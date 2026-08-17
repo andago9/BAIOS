@@ -4,12 +4,15 @@ Pantallas y comportamiento **cerrados** en F2-05. Producto: [visión](vision.md)
 
 ## Flujo común
 
-1. Bienvenida: nombre, versión del motor, GPL-3.0 con enlace a `LICENSE`.
-2. Acuerdo de uso: falsos positivos, no borrar a ciegas, terceros con su EULA. «No acepto» no cierra la app; no entra al motor.
-3. Selector **Hogar** / **Técnico**. Si `ModeDefault=Technician` o se detecta extraíble (perfil USB 4.2), preseleccionar Técnico.
+1. Bienvenida: nombre, versión, «orquesta diagnóstico, seguridad y mantenimiento» (sin jerga de stack), GPL-3.0 con enlace a `LICENSE`, y sitio web (`https://github.com/andago9/BAIOS`).
+2. Acuerdo de uso: falsos positivos, no borrar a ciegas, terceros con su EULA, descargo (BAIOS / Andago no se hacen responsables del uso de las herramientas) y enlace al foro ([Issues](https://github.com/andago9/BAIOS/issues)). «No acepto» no cierra la app; no entra al motor.
+3. Selector **Hogar** / **Técnico**. Si `ModeDefault=Technician` o se detecta extraíble (perfil USB 4.2), preseleccionar Técnico. Desde el shell, **Cambiar modo** vuelve al selector sin cerrar; la sesión (hallazgos) se conserva.
 4. Shell: Inicio | Seguridad | Diagnóstico | Mantenimiento | Red | Herramientas | Reportes.
+5. Al cerrar: diálogo corto de créditos (Andago, GPL-3.0, terceros = sus autores, repo y foro). **Acerca de** en el shell: GPL completa, velosergio, `logs/app.log`, actualizar motor (Técnico).
 
 Herencia v3: acuerdo y avisos. No se replica el menú Portables / Ejecutables / Online.
+
+Logo BAIOS e icono del `.exe` en bienvenida y ventana. No se embeben logos de fabricantes; `Tools/<id>/icon.png` es opcional.
 
 ## Inicio
 
@@ -57,11 +60,11 @@ IP, DNS, gateway, ping a un host fijo (p. ej. `1.1.1.1` y el gateway), tracert o
 
 Ficha visible: nombre, versión si se conoce, fabricante, URL, licencia, admin, arquitectura.
 
-4.0: **Ejecutar** y **Manual** (URL). Núcleo: AdwCleaner, MSERT, Autoruns.
+4.0: **Ejecutar**, **Manual** (URL), **Licencia** y **Créditos** (fabricante + EULA del autor). Núcleo: AdwCleaner, MSERT, Autoruns.
 
-4.1: estado de versión y «Actualizar» según manifiesto.
+4.1: estado de versión y «Actualizar» según manifiesto. Técnico: **Ver log** (`Tools/<id>/execution.log`) y **Abrir carpeta**. HijackThis pide confirmación por falsos positivos.
 
-Modo Hogar: solo el núcleo. Técnico: núcleo + (4.1) el resto vigente + enlaces online (VirusTotal, ESET).
+Modo Hogar: solo el núcleo. Técnico: núcleo + (4.1) el resto vigente + enlaces online (VirusTotal, ESET, Jotti, Hybrid Analysis) y **Rescue / LiveCD** (solo URLs oficiales).
 
 ## Reportes
 
