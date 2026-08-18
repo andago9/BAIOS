@@ -7,7 +7,7 @@ Hay dos HTML de origen (mismo CSS / Bootstrap / html5-editor):
 - [`archive/Changelog-v3.html`](archive/Changelog-v3.html) — snapshot de **solo v3** (11 jul 2022): migración AutoPlay → Visual Studio, leyenda de tipos y pendientes. Sin historial previo. Pie «Copyright» a medias.
 - [`archive/Changelog.html`](archive/Changelog.html) — el mismo encabezado de v3 más el historial AutoPlay pegado debajo (duplicados, tabla vacía «Cell 2x2», una «versión 1.0.0» contaminada con 1.5.0–2.0.1).
 
-Las fechas de 0.0.1–1.x son inciertas: el HTML compilado copiaba bloques enteros. Si hay conflicto, gana la entrada más específica. Los pendientes no van aquí: están en el [backlog](backlog.md) (P0–P3 archivados; F1–F5 hechos salvo F5-07 empresa).
+Las fechas de 0.0.1–1.x son inciertas: el HTML compilado copiaba bloques enteros. Si hay conflicto, gana la entrada más específica. Los pendientes no van aquí: están en el [backlog](backlog.md) (P0–P3 archivados; F1–F5 cerrados; no hay edición empresarial).
 
 ## Tipos
 
@@ -44,7 +44,7 @@ Solo se listan las secciones que tienen entradas. No se rellenan categorías vac
 
 ## [Unreleased]
 
-Definición de **BAIOS 4** (visión, arquitectura, catálogo, roadmap). F1–F5 cerrados (2026-08-17) salvo F5-07 (empresa). El prototipo `test2` se retiró del árbol. Detalle: [roadmap](roadmap.md) y [backlog](backlog.md).
+Definición de **BAIOS 4** (visión, arquitectura, catálogo, roadmap). F1–F5 cerrados (2026-08-17). No habrá edición empresarial. El prototipo `test2` se retiró del árbol. Detalle: [roadmap](roadmap.md) y [backlog](backlog.md).
 
 ### Added
 
@@ -74,6 +74,7 @@ Definición de **BAIOS 4** (visión, arquitectura, catálogo, roadmap). F1–F5 
 ### Removed
 
 - Prototipo WinForms `BAIOS/test2` (F5-06). Historia en git y `docs/archive/`.
+- Edición empresarial (F5-07): no formará parte del producto.
 
 ### Fixed
 

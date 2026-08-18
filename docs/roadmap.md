@@ -2,7 +2,7 @@
 
 Fuente de producto: [visión](vision.md). Trabajo pendiente: [backlog](backlog.md).
 
-Orden: **DOC + F1–F5 hechos** (F5-07 fuera de alcance). El prototipo WinForms `test2` se retiró del árbol.
+Orden: **DOC + F1–F5 cerrados**. No hay edición empresarial. El prototipo WinForms `test2` se retiró del árbol.
 
 ## 4.0 — MVP usable en ambos modos
 
@@ -19,7 +19,7 @@ Incluye:
 - Herramientas externas (lanzamiento): AdwCleaner, Microsoft Safety Scanner, Autoruns. HijackThis en **4.1** (F1 vigente + alerta de falsos positivos). Norton Power Eraser **fuera** (EOL 2026-04-30).
 - Modos Hogar y Técnico: mismas pantallas, distinta densidad; flujo «diagnóstico completo» en Técnico.
 
-No incluye: auto-updater de portables, instalador MSI pulido, LiveCD, edición empresarial, embebido masivo de antivirus.
+No incluye: auto-updater de portables, instalador MSI pulido, LiveCD embebido, embebido masivo de antivirus.
 
 Backlog: **F3** (cerrada).
 
@@ -39,13 +39,13 @@ Backlog: **F4** (cerrada).
 - Rescue / LiveCD: catálogo de enlaces oficiales, no ISO embebidas.
 - Logs y UX de producto; [documentación de usuario](usuario.md).
 
-Backlog: **F5** (cerrada salvo F5-07 empresa). Ver [actualización](actualizacion.md) y [seguridad](seguridad.md).
+Backlog: **F5** (cerrada). Ver [actualización](actualizacion.md) y [seguridad](seguridad.md).
 
 ## Fuera de alcance (hasta nuevo aviso)
 
 | Ítem | Nota |
 | --- | --- |
-| Edición empresarial | Posterior a 4.2 |
+| Edición empresarial | No habrá. Un motor, dos modos (Hogar / Técnico). |
 | Recopilación masiva tipo «BAIOS Full» ISO | Sustituida por manifiesto |
 | Restaurar Form4 / Form5 de Lite | Producto 3 archivado |
 | Reimplementar motores de terceros | Orquestar, no reemplazar |

@@ -6,7 +6,7 @@ Leyenda de tipo (Keep a Changelog): **Add**, **Change**, **Fix**, **Upgrade**, *
 
 Estados: `pendiente` · `parcial` · `hecho` · `fuera_de_alcance_ahora` · `archivado`.
 
-Orden: **DOC + F1–F5 hechos** (F5-07 fuera de alcance). El prototipo `test2` se retiró del árbol.
+Orden: **DOC + F1–F5 cerrados**. No hay edición empresarial. El prototipo `test2` se retiró del árbol.
 
 ## Hecho (no reabrir)
 
@@ -27,6 +27,7 @@ Orden: **DOC + F1–F5 hechos** (F5-07 fuera de alcance). El prototipo `test2` s
 | DONE-13 | Add | F4-02: descarga https, sha256, versionado y reemplazo sin recompilar. |
 | DONE-14 | Add | F4-03…F4-05: logs de ejecución, fichas F1-03 en manifiesto, HijackThis con alerta de falsos positivos. |
 | DONE-15 | Add | F5-01…F5-06 y F5-08: empaquetado, Rescue, About/logs, manual, retiro de test2, identidad visual. |
+| DONE-16 | Remove | F5-07: no habrá edición empresarial. Un motor, dos modos. |
 
 ## DOC — Definición (esta fase)
 
@@ -99,7 +100,7 @@ Probar binarios de terceros en un PC real sigue siendo validación de uso, no re
 | F4-04 | Upgrade | Incorporar fichas F1-03 vigentes. | hecho |
 | F4-05 | Add | HijackThis (F1 lo confirma vigente), con alerta de falsos positivos. | hecho |
 
-## F5 — Producto 4.0 / 4.2
+## F5 — Producto 4.0 / 4.2 (cerrada)
 
 | ID | Tipo | Ítem | Estado |
 | --- | --- | --- | --- |
@@ -109,7 +110,7 @@ Probar binarios de terceros en un PC real sigue siendo validación de uso, no re
 | F5-04 | Add | UX, logs de aplicación, About amplio con GPL-3.0 y enlace a `LICENSE`. El diálogo corto al salir (Andago, terceros, repo, foro) ya está. | hecho |
 | F5-05 | Add | Documentación de usuario (sustituye el PDF de instalación perdido). | hecho |
 | F5-06 | Change | Aplanar `BAIOS/BAIOS/` y retirar el prototipo `test2` cuando 4.0 compile. | hecho |
-| F5-07 | Add | Edición empresarial. | fuera_de_alcance_ahora |
+| F5-07 | Remove | Edición empresarial. | archivado (no habrá) |
 | F5-08 | Add | Identidad visual: logo BAIOS (velosergio) en bienvenida/ventana, icono del `.exe`. No embeber logos de AdwCleaner/MSERT/Autoruns (marca ajena); en 4.1 el manifiesto podrá apuntar a iconos locales opcionales. | hecho |
 
 ## Archivado — BAIOS 3 / Lite

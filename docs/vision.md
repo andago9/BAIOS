@@ -36,7 +36,7 @@ Las ediciones históricas Lite / Full / Rescue se replantean:
 
 - **Lite** → modo Hogar.
 - **Full** → repositorio de herramientas (manifiesto, no un ISO gigante).
-- **Rescue** (LiveCD) → fuera de 4.0; candidato 4.2+. Una edición empresarial queda más allá de 4.2.
+- **Rescue** (LiveCD) → enlaces oficiales en 4.2 (nunca ISO embebidas).
 
 ## Qué no es BAIOS
 
@@ -44,6 +44,7 @@ Las ediciones históricas Lite / Full / Rescue se replantean:
 - No reimplementa AdwCleaner, Autoruns ni otros motores de terceros.
 - No es una recopilación masiva de `.exe` embebidos que hay que recompilar cada vez que una herramienta se actualiza.
 - No es un LiveCD en 4.0.
+- No hay edición empresarial ni está prevista: un motor, dos modos.
 
 ## Arquitectura de producto
 
@@ -82,7 +83,7 @@ Módulos nativos del motor (4.0): Inicio, Seguridad, Diagnóstico, Mantenimiento
 
 Entra: dashboard de estado, Defender, inventario y SMART cuando sea accesible, mantenimiento con confirmación (incluidos DISM/SFC; CHKDSK solo advertido), red básica, reporte texto/HTML, modos Hogar/Técnico, y lanzamiento de AdwCleaner, Microsoft Safety Scanner y Autoruns.
 
-No entra: auto-updater de portables, instalador MSI pulido, LiveCD, edición empresarial, embebido masivo de antivirus. Ver [roadmap](roadmap.md).
+No entra: auto-updater de portables, instalador MSI pulido, LiveCD embebido, embebido masivo de antivirus. Ver [roadmap](roadmap.md).
 
 ## Código histórico (BAIOS 3 / 6 Alpha)
 
