@@ -5,4 +5,9 @@
   <ItemGroup>
     <ProjectReference Include="..\BAIOS.Core\BAIOS.Core.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\logo.png">
+      <LogicalName>BAIOS.logo.png</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>

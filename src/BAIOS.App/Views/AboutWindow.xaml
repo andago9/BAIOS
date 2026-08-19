@@ -9,7 +9,7 @@
         WindowStartupLocation="CenterOwner"
         ShowInTaskbar="False"
         Background="{StaticResource BgBrush}"
-        Icon="/Assets/app.ico">
+        Icon="pack://application:,,,/Assets/logo.png">
     <DockPanel Margin="24">
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right">
             <Button Style="{StaticResource GhostButton}" Content="Ver log" Command="{Binding OpenLogCommand}"/>
@@ -22,7 +22,7 @@
         <DockPanel>
             <StackPanel DockPanel.Dock="Top">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/Assets/logo.png" Width="56" Height="56" Margin="0,0,16,0"/>
+                    <Image Source="pack://application:,,,/Assets/logo.png" Width="56" Height="56" Margin="0,0,16,0"/>
                     <StackPanel>
                         <TextBlock FontSize="24" FontWeight="SemiBold" Text="{Binding Title}"/>
                         <TextBlock Margin="0,4,0,0" Foreground="{StaticResource MutedBrush}" Text="{Binding Version}"/>

@@ -5,7 +5,8 @@ namespace BAIOS.App.Services;
 
 public static class AppLinks
 {
-    public const string Website = "https://github.com/andago9/BAIOS";
+    public const string Website = "https://sites.google.com/view/blinter-baios";
+    public const string Repository = "https://github.com/andago9/BAIOS";
     public const string Forum = "https://github.com/andago9/BAIOS/issues";
 
     public static void OpenUrl(string? url)
@@ -48,6 +49,6 @@ public static class AppLinks
             return;
         }
 
-        OpenUrl(Website + "/blob/main/docs/usuario.md");
+        OpenUrl(Repository + "/blob/main/docs/usuario.md");
     }
 }

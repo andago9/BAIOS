@@ -45,6 +45,5 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <Resource Include="Assets\logo.png" />
-    <Resource Include="Assets\app.ico" />
     </ItemGroup>
 </Project>
