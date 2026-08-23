@@ -57,10 +57,10 @@ Backlog: **OPS**.
 
 Sustituye el Google Sites (`sites.google.com/view/blinter-baios`) y el mini blog Blogger (P2-05, archivado).
 
-- Fase 1: landing estática local en [`website/`](../website/) (estructura del sitio actual, copy BAIOS 4, tema Adminox Landing).
+- Fase 1: landing estática local en [`website/`](../website/) (estructura del sitio actual, copy BAIOS 4).
 - Después: publicar (p. ej. GitHub Pages), apuntar la app al URL público y retirar Google Sites.
 
-Fuera de alcance: blog, panel Adminox, CMS.
+Fuera de alcance: blog, panel de administración, CMS.
 
 Backlog: **WEB**.
 

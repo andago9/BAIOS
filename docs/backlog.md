@@ -129,13 +129,14 @@ Los binarios **no van dentro de `BAIOS.exe`**. Van en `Tools/<id>/` junto al exe
 
 ## WEB — Sitio público
 
-No es una versión del motor. Sustituye el Google Sites y el P2-05 (blog Blogger, archivado). El HTML estático vive en [`website/`](../website/); el tema Adminox en `website/Adminox_v2.0.0/` es solo referencia (no se publica el panel Admin).
+No es una versión del motor. Sustituye el Google Sites y el P2-05 (blog Blogger, archivado). El sitio público es HTML estático en [`website/`](../website/) (`index.html`, `css/`, `js/`, `fonts/`, `images/`).
 
 | ID | Tipo | Ítem | Estado |
 | --- | --- | --- | --- |
-| WEB-01 | Add | Landing estática en `website/` (estructura del Google Sites, copy BAIOS 4, tema Adminox Landing). | hecho |
+| WEB-01 | Add | Landing estática en `website/` (estructura del Google Sites, copy BAIOS 4). | hecho |
 | WEB-02 | Change | Apuntar [`AppLinks.cs`](../src/BAIOS.App/Services/AppLinks.cs), [`WelcomeView.xaml`](../src/BAIOS.App/Views/WelcomeView.xaml), [`AgreementView.xaml`](../src/BAIOS.App/Views/AgreementView.xaml) y [`ReportsModule.cs`](../src/BAIOS.Reports/ReportsModule.cs) al URL público. | pendiente |
 | WEB-03 | Add | Publicar (p. ej. GitHub Pages) y retirar Google Sites. | pendiente |
+| WEB-04 | Remove | Higiene: retirar vendor Adminox (Admin, docs, demo) y CSS/JS de plantilla no usados. | hecho |
 
 ## Archivado — BAIOS 3 / Lite
 

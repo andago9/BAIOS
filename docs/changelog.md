@@ -65,17 +65,19 @@ Definición de **BAIOS 4** (visión, arquitectura, catálogo, roadmap). F1–F5 
 - Log de aplicación `logs/app.log` y ventana **Acerca de** con GPL, velosergio y **Ver log** (F5-04).
 - [Manual de usuario](usuario.md) (F5-05).
 - Logo e icono del `.exe`; `icon.png` opcional por herramienta (F5-08).
-- Landing estática en [`website/`](../website/) (WEB-01): una página en español (qué es, recomendaciones, contacto), copy BAIOS 4, tema Adminox Landing. La app sigue apuntando a Google Sites hasta WEB-02.
+- Landing estática en [`website/`](../website/) (WEB-01): una página en español (qué es, recomendaciones, contacto), copy BAIOS 4. La app sigue apuntando a Google Sites hasta WEB-02.
 
 ### Changed
 
 - Bienvenida: texto desde «Orquesta…» (sin «Motor 4.0 / .NET 8 / WPF») y enlace al sitio web del repo.
 - Acuerdo de uso: descargo de responsabilidad y enlace al foro (GitHub Issues).
+- `website/`: árbol solo de la landing (`index.html`, `css/`, `js/`, `fonts/`, `images/`); CSS propio (`baios.css`); JS reducido al menú móvil (WEB-04).
 
 ### Removed
 
 - Prototipo WinForms `BAIOS/test2` (F5-06). Historia en git y `docs/archive/`.
 - Edición empresarial (F5-07): no formará parte del producto.
+- Vendor Adminox completo (Admin, Documentation, Landing de demo), `style.css` de plantilla, SmoothScroll, jQuery easing y fuentes Glyphicons (WEB-04).
 
 ### Fixed
 

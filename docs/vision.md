@@ -111,4 +111,4 @@ El backlog Lite (P0–P3) está **archivado** en [backlog.md](backlog.md). No se
 
 BAIOS no es un sitio PHP ni necesita XAMPP. El clone puede vivir en `htdocs` solo por hábito de Git. Ítem archivado P3-05; higiene del repo nuevo en F5 / P3 archivado.
 
-La landing pública es HTML estático en [`website/`](../website/). Vista local: `http://localhost/BAIOS/website/`. El panel Adminox no forma parte del producto.
+La landing pública es HTML estático en [`website/`](../website/). Vista local: `http://localhost/BAIOS/website/`.
