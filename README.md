@@ -12,6 +12,7 @@ Documentación de producto:
 - [Visión](docs/vision.md)
 - [Roadmap 4.0 / 4.1 / 4.2](docs/roadmap.md)
 - [Backlog](docs/backlog.md)
+- Sitio: [landing local](website/index.html) · vigente en [Google Sites](https://sites.google.com/view/blinter-baios) hasta publicar (WEB-02 / WEB-03)
 - [Catálogo de herramientas](docs/catalogo.md)
 - [Arquitectura](docs/arquitectura.md) · [Diseño funcional](docs/diseno-funcional.md) · [Actualización](docs/actualizacion.md) · [Reportes](docs/reportes.md) · [Seguridad](docs/seguridad.md)
 
@@ -44,7 +45,7 @@ El ensamblado se llama `BAIOS.exe`.
 
 Arranque: bienvenida → acuerdo (si no aceptas, no entra al motor) → Hogar o Técnico → shell. Detalle: [manual de usuario](docs/usuario.md).
 
-Coloca los binarios en `Tools/<id>/` o, si la ficha tiene URL https y `sha256` de 64 hex, usa **Instalar / Actualizar**. Un hash que no coincida impide instalar y ejecutar. `manifestUrl` en `config.json` refresca el manifiesto remoto. Cada lanzamiento deja una línea en `Tools/<id>/execution.log` (modo Técnico: **Ver log**).
+Coloca los binarios en `src/BAIOS.App/Tools/<id>/` para que el publish los copie junto al exe (`dist/BAIOS/Tools/<id>/`). No se embeben en `BAIOS.exe`. Si la ficha tiene URL https y `sha256` de 64 hex, usa **Instalar / Actualizar**. Un hash que no coincida impide instalar y ejecutar. `manifestUrl` en `config.json` refresca el manifiesto remoto. Cada lanzamiento deja una línea en `Tools/<id>/execution.log` (modo Técnico: **Ver log**). Cola operativa: [backlog OPS](docs/backlog.md).
 
 ## Requisitos
 
@@ -54,4 +55,4 @@ Windows x64. SDK .NET 8 para compilar. El publish self-contained no pide instala
 
 blinter.baios@gmail.com
 
-BAIOS no es un sitio PHP ni necesita XAMPP; el clone puede vivir en `htdocs` solo por hábito de Git.
+BAIOS no es un sitio PHP ni necesita XAMPP; el clone puede vivir en `htdocs` solo por hábito de Git. La landing estática está en [`website/`](website/index.html).

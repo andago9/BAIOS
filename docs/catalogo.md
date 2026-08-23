@@ -12,7 +12,7 @@ Leyenda de ficha: `completa` · `incompleta` · `pendiente`.
 
 Leyenda de vigencia (cerrada en F1, 2026-08-17): `vigente` · `abandonada` · `alternativa` · `fuera_de_4.0`.
 
-F1 cierra **decisiones de producto** (qué entra, qué sale, URLs oficiales). Probar cada binario en un PC es [F3-09](backlog.md) / [F4-04](backlog.md), no reabre estas tablas.
+F1 cierra **decisiones de producto** (qué entra, qué sale, URLs oficiales). Probar cada binario en un PC es [OPS-04](backlog.md), no reabre estas tablas.
 
 Microsoft Defender no es ficha de portable: es módulo nativo del motor.
 

@@ -7,7 +7,7 @@ Hay dos HTML de origen (mismo CSS / Bootstrap / html5-editor):
 - [`archive/Changelog-v3.html`](archive/Changelog-v3.html) — snapshot de **solo v3** (11 jul 2022): migración AutoPlay → Visual Studio, leyenda de tipos y pendientes. Sin historial previo. Pie «Copyright» a medias.
 - [`archive/Changelog.html`](archive/Changelog.html) — el mismo encabezado de v3 más el historial AutoPlay pegado debajo (duplicados, tabla vacía «Cell 2x2», una «versión 1.0.0» contaminada con 1.5.0–2.0.1).
 
-Las fechas de 0.0.1–1.x son inciertas: el HTML compilado copiaba bloques enteros. Si hay conflicto, gana la entrada más específica. Los pendientes no van aquí: están en el [backlog](backlog.md) (P0–P3 archivados; F1–F5 cerrados; no hay edición empresarial).
+Las fechas de 0.0.1–1.x son inciertas: el HTML compilado copiaba bloques enteros. Si hay conflicto, gana la entrada más específica. Los pendientes no van aquí: están en el [backlog](backlog.md) (P0–P3 archivados; F1–F5 cerrados; cola operativa OPS; cola WEB; no hay edición empresarial).
 
 ## Tipos
 
@@ -44,7 +44,7 @@ Solo se listan las secciones que tienen entradas. No se rellenan categorías vac
 
 ## [Unreleased]
 
-Definición de **BAIOS 4** (visión, arquitectura, catálogo, roadmap). F1–F5 cerrados (2026-08-17). No habrá edición empresarial. El prototipo `test2` se retiró del árbol. Detalle: [roadmap](roadmap.md) y [backlog](backlog.md).
+Definición de **BAIOS 4** (visión, arquitectura, catálogo, roadmap). F1–F5 cerrados (2026-08-17). No habrá edición empresarial. El prototipo `test2` se retiró del árbol. Cola operativa (sembrar Tools, sha256, publicación): [backlog OPS](backlog.md). Sitio público: [backlog WEB](backlog.md). Detalle: [roadmap](roadmap.md).
 
 ### Added
 
@@ -65,6 +65,7 @@ Definición de **BAIOS 4** (visión, arquitectura, catálogo, roadmap). F1–F5 
 - Log de aplicación `logs/app.log` y ventana **Acerca de** con GPL, velosergio y **Ver log** (F5-04).
 - [Manual de usuario](usuario.md) (F5-05).
 - Logo e icono del `.exe`; `icon.png` opcional por herramienta (F5-08).
+- Landing estática en [`website/`](../website/) (WEB-01): una página en español (qué es, recomendaciones, contacto), copy BAIOS 4, tema Adminox Landing. La app sigue apuntando a Google Sites hasta WEB-02.
 
 ### Changed
 

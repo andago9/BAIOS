@@ -2,7 +2,7 @@
 
 Fuente de producto: [visión](vision.md). Trabajo pendiente: [backlog](backlog.md).
 
-Orden: **DOC + F1–F5 cerrados**. No hay edición empresarial. El prototipo WinForms `test2` se retiró del árbol.
+Orden: **DOC + F1–F5 cerrados**. Cola actual: **OPS** en el [backlog](backlog.md). No hay edición empresarial. El prototipo WinForms `test2` se retiró del árbol.
 
 ## 4.0 — MVP usable en ambos modos
 
@@ -41,6 +41,29 @@ Backlog: **F4** (cerrada).
 
 Backlog: **F5** (cerrada). Ver [actualización](actualizacion.md) y [seguridad](seguridad.md).
 
+## Después de 4.2 — Operación (no es versión nueva)
+
+El código de 4.0 / 4.1 / 4.2 está cerrado. Queda sembrar herramientas, hashes y publicar.
+
+- Colocar binarios oficiales en `src/BAIOS.App/Tools/<id>/` (no dentro del `.exe`). `publish.ps1` los copia a `dist/BAIOS/` y `dist/BAIOS.Technician/`.
+- Rellenar `sha256` en el manifiesto para que **Instalar / Actualizar** descargue.
+- Primera release 4.0 (hoy: Unreleased / `4.0.0-dev`).
+- Validar cada herramienta en un PC real.
+- Seguir clasificando el [inventario](inventario.md) de disco.
+
+Backlog: **OPS**.
+
+## Presencia web (no es versión de motor)
+
+Sustituye el Google Sites (`sites.google.com/view/blinter-baios`) y el mini blog Blogger (P2-05, archivado).
+
+- Fase 1: landing estática local en [`website/`](../website/) (estructura del sitio actual, copy BAIOS 4, tema Adminox Landing).
+- Después: publicar (p. ej. GitHub Pages), apuntar la app al URL público y retirar Google Sites.
+
+Fuera de alcance: blog, panel Adminox, CMS.
+
+Backlog: **WEB**.
+
 ## Fuera de alcance (hasta nuevo aviso)
 
 | Ítem | Nota |
@@ -49,7 +72,7 @@ Backlog: **F5** (cerrada). Ver [actualización](actualizacion.md) y [seguridad](
 | Recopilación masiva tipo «BAIOS Full» ISO | Sustituida por manifiesto |
 | Restaurar Form4 / Form5 de Lite | Producto 3 archivado |
 | Reimplementar motores de terceros | Orquestar, no reemplazar |
-| Mini blog Blogger | Distribución; no es producto 4.x |
+| Mini blog Blogger | Archivado (P2-05). Sustituido por la cola WEB. |
 | Personalizar el `.exe` de cada herramienta embebida | Incompatible con manifiesto |
 
 ## Mapa de ediciones antiguas

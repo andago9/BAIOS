@@ -6,7 +6,7 @@ Leyenda de tipo (Keep a Changelog): **Add**, **Change**, **Fix**, **Upgrade**, *
 
 Estados: `pendiente` · `parcial` · `hecho` · `fuera_de_alcance_ahora` · `archivado`.
 
-Orden: **DOC + F1–F5 cerrados**. No hay edición empresarial. El prototipo `test2` se retiró del árbol.
+Orden: **DOC + F1–F5 cerrados**. Cola actual: **OPS** + **WEB**. No hay edición empresarial. El prototipo `test2` se retiró del árbol.
 
 ## Hecho (no reabrir)
 
@@ -44,7 +44,7 @@ Orden: **DOC + F1–F5 cerrados**. No hay edición empresarial. El prototipo `te
 | DOC-09 | Add | Esqueleto [seguridad](seguridad.md) y alinear `SECURITY.md`. | hecho |
 | DOC-10 | Change | Alinear [README](../README.md) con la visión 4.0. | hecho |
 
-F1, F2 y F3 cerrados. Validar binarios de terceros en un PC no reabre las tablas del catálogo (F4-04).
+F1, F2 y F3 cerrados. Validar binarios de terceros en un PC es OPS-04, no reabre las tablas del catálogo.
 
 ## F1 — Rescate
 
@@ -88,7 +88,7 @@ Inventario ya extraído en el catálogo. Aquí se **confirma vigencia**, no se r
 | F3-10 | Add | Flujo «diagnóstico completo» en modo Técnico. | hecho |
 | F3-11 | Add | Acuerdo de uso, aviso de no borrar a ciegas, alerta de falsos positivos (herencia útil de v3). | hecho |
 
-Probar binarios de terceros en un PC real sigue siendo validación de uso, no reabre F3-09.
+Probar binarios de terceros en un PC real es OPS-04, no reabre F3-09.
 
 ## F4 — Motor de herramientas (4.1; cerrada)
 
@@ -112,6 +112,30 @@ Probar binarios de terceros en un PC real sigue siendo validación de uso, no re
 | F5-06 | Change | Aplanar `BAIOS/BAIOS/` y retirar el prototipo `test2` cuando 4.0 compile. | hecho |
 | F5-07 | Remove | Edición empresarial. | archivado (no habrá) |
 | F5-08 | Add | Identidad visual: logo BAIOS (velosergio) en bienvenida/ventana, icono del `.exe`. No embeber logos de AdwCleaner/MSERT/Autoruns (marca ajena); en 4.1 el manifiesto podrá apuntar a iconos locales opcionales. | hecho |
+
+## OPS — Operación (pendiente)
+
+No es una versión nueva. El motor 4.0 / 4.1 / 4.2 ya está en código. Esto es sembrar, publicar y validar.
+
+Los binarios **no van dentro de `BAIOS.exe`**. Van en `Tools/<id>/` junto al exe. Para que `scripts/publish.ps1` los copie a `dist/BAIOS/` y `dist/BAIOS.Technician/`: colocarlos en [`src/BAIOS.App/Tools/<id>/`](../src/BAIOS.App/Tools/). Git no versiona esos `.exe` (`.gitignore`). Alternativa: copiarlos después del publish a `dist/BAIOS/Tools/<id>/`.
+
+| ID | Tipo | Ítem | Estado |
+| --- | --- | --- | --- |
+| OPS-01 | Add | Sembrar binarios oficiales en `src/BAIOS.App/Tools/<id>/` (hoy solo `.gitkeep`). Nombres: `adwcleaner.exe`, `msert.exe`, `Autoruns64.exe`, `HiJackThis.exe`, `KVRT.exe`, `HitmanPro_x64.exe`, `ZHPCleaner.exe`, `EmsisoftEmergencyKit.exe`, `SpybotSetup.exe`, `MBSetup.exe`. | pendiente |
+| OPS-02 | Add | Rellenar `sha256` de 64 hex en `manifest.json`. Sin hash, **Instalar / Actualizar** no descarga; se puede seguir colocando el archivo a mano (OPS-01). | pendiente |
+| OPS-03 | Add | Primera publicación 4.0: dejar de ser `4.0.0-dev`, pasar [Unreleased](changelog.md) a versión fechada. | pendiente |
+| OPS-04 | Add | Probar cada ficha del manifiesto en un PC real (lanzar, UAC, log). No reabre F3-09 ni F4-04. | pendiente |
+| OPS-05 | Change | [Inventario](inventario.md): ~50 ítems `pendiente` en la carpeta local (~10 GB). No es catálogo ni producto 4.x. | pendiente |
+
+## WEB — Sitio público
+
+No es una versión del motor. Sustituye el Google Sites y el P2-05 (blog Blogger, archivado). El HTML estático vive en [`website/`](../website/); el tema Adminox en `website/Adminox_v2.0.0/` es solo referencia (no se publica el panel Admin).
+
+| ID | Tipo | Ítem | Estado |
+| --- | --- | --- | --- |
+| WEB-01 | Add | Landing estática en `website/` (estructura del Google Sites, copy BAIOS 4, tema Adminox Landing). | hecho |
+| WEB-02 | Change | Apuntar [`AppLinks.cs`](../src/BAIOS.App/Services/AppLinks.cs), [`WelcomeView.xaml`](../src/BAIOS.App/Views/WelcomeView.xaml), [`AgreementView.xaml`](../src/BAIOS.App/Views/AgreementView.xaml) y [`ReportsModule.cs`](../src/BAIOS.Reports/ReportsModule.cs) al URL público. | pendiente |
+| WEB-03 | Add | Publicar (p. ej. GitHub Pages) y retirar Google Sites. | pendiente |
 
 ## Archivado — BAIOS 3 / Lite
 
@@ -148,7 +172,7 @@ P1-10 (mostrar GPL en la app) se retoma como F5-04.
 | P2-02 | Ficha Dr. Web CureIt!. | archivado (F1-04: probablemente fuera) |
 | P2-03 | Pruebas y manuales por portable. | archivado (F1 / F4) |
 | P2-04 | Personalizar `.exe` embebido. | archivado (incompatible con manifiesto) |
-| P2-05 | Mini blog Blogger. | archivado |
+| P2-05 | Mini blog Blogger. | archivado (sustituido por WEB) |
 | P2-06 | Edición Full. | archivado (manifiesto 4.1) |
 | P2-07 | Edición Rescue. | archivado (F5-03) |
 | P2-08 | Manual de instalación PDF ausente. | archivado (F5-05) |

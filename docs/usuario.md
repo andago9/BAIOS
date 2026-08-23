@@ -52,7 +52,11 @@ Al salir aparece un diálogo corto de créditos. **Acerca de** (en el shell) mue
 
 ## Herramientas
 
-Coloca los binarios en `Tools/<id>/` junto al exe. Si la ficha del `manifest.json` tiene URL https y `sha256` de 64 hex, usa **Instalar / Actualizar**. Un hash que no coincida **impide** instalar y ejecutar.
+Los binarios **no van dentro de `BAIOS.exe`**. Van en `Tools/<id>/` junto al exe.
+
+Para empaquetarlos al publicar (`scripts/publish.ps1` → `dist/BAIOS/` y `dist/BAIOS.Technician/`): colócalos en `src/BAIOS.App/Tools/<id>/` (carpetas ya creadas; git no versiona los `.exe`). Alternativa: copiarlos después a `dist/BAIOS/Tools/<id>/`. En un PC instalado: `%LOCALAPPDATA%\BAIOS\Tools/<id>/`.
+
+Si la ficha del `manifest.json` tiene URL https y `sha256` de 64 hex, usa **Instalar / Actualizar**. Un hash que no coincida **impide** instalar y ejecutar. Sin sha256 hay que colocar el archivo a mano.
 
 Cada lanzamiento deja una línea en `Tools/<id>/execution.log`. En Técnico: **Ver log** y **Abrir carpeta**.
 

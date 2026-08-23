@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BAIOS (Blinter All In One Security) orquesta diagnóstico, seguridad y mantenimiento en Windows. No es un antivirus: no sustituye Microsoft Defender.">
+    <meta name="author" content="Andago">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>BAIOS — Blinter All In One Security</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/baios.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-baios">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <img src="images/logo.png" alt="">
+                BAIOS
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#que-es">Qué es</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#recomendaciones">Recomendaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/andago9/BAIOS" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="inicio">
+        <div class="container text-center">
+            <img class="hero-logo" src="images/logo.png" alt="BAIOS">
+            <h1>BAIOS</h1>
+            <p class="hero-name">Blinter All In One Security</p>
+            <p class="hero-lead">Orquesta diagnóstico, seguridad y mantenimiento en Windows. No sustituye Microsoft Defender: lo usa, lanza herramientas de terceros y deja un reporte por sesión.</p>
+            <p class="hero-actions">
+                <a class="btn btn-baios" href="https://github.com/andago9/BAIOS" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+                <a class="btn btn-ghost" href="#recomendaciones">Recomendaciones</a>
+            </p>
+        </div>
+    </header>
+
+    <section class="section" id="que-es">
+        <div class="container">
+            <h2 class="section-title">Qué es BAIOS</h2>
+            <p class="section-lead">Un centro de operaciones para el PC, no un antivirus más. Orquesta el estado del equipo, lanza herramientas propias o de terceros e interpreta resultados. Cada fabricante conserva su licencia. El uso es bajo tu responsabilidad.</p>
+            <div class="row">
+                <div class="col-md-4 point">
+                    <i class="fa fa-shield" aria-hidden="true"></i>
+                    <h3>No sustituye Defender</h3>
+                    <p>No compite con Microsoft Defender ni con otros motores. Los lee, los lanza cuando hace falta y deja constancia en el reporte.</p>
+                </div>
+                <div class="col-md-4 point">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <h3>Un motor, dos modos</h3>
+                    <p><strong>Hogar:</strong> dashboard claro y acciones seguras. <strong>Técnico:</strong> el mismo motor, más detalle y un flujo hasta el reporte.</p>
+                </div>
+                <div class="col-md-4 point">
+                    <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                    <h3>Software libre</h3>
+                    <p>El motor se publica bajo GNU GPL v3. Las herramientas de terceros conservan su propia licencia y su EULA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="recomendaciones">
+        <div class="container">
+            <h2 class="section-title">Recomendaciones</h2>
+            <p class="section-lead">Las mismas reglas de siempre, alineadas con BAIOS 4.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <article class="card-rec">
+                        <i class="fa fa-pause-circle-o" aria-hidden="true"></i>
+                        <h3>Uno al tiempo</h3>
+                        <p>No se aconseja tener dos antivirus residentes activos a la vez. BAIOS no desactiva Microsoft Defender: orquesta su estado y, si hace falta, una segunda opinión.</p>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="card-rec">
+                        <i class="fa fa-ban" aria-hidden="true"></i>
+                        <h3>Nunca</h3>
+                        <p>No elimines archivos del sistema ni cuarentenas a ciegas. Algunos motores marcan falsos positivos. Si no estás seguro de qué es, no lo borres.</p>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="card-rec">
+                        <i class="fa fa-database" aria-hidden="true"></i>
+                        <h3>BACKUP</h3>
+                        <p>Haz siempre un respaldo de tu información, en la nube o en un medio físico, antes de limpiar o reparar el equipo.</p>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="card-rec">
+                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        <h3>Estar alerta</h3>
+                        <p>Ante la duda, no sigas. Si crees que el sitio o el archivo no es de confianza, detente.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contacto">
+        <div class="container text-center">
+            <h2 class="section-title">¿Alguna sugerencia?</h2>
+            <p class="section-lead">Escríbenos o abre un issue en el repositorio.</p>
+            <p><a class="contact-mail" href="mailto:blinter.baios@gmail.com">blinter.baios@gmail.com</a></p>
+            <p><a href="https://github.com/andago9/BAIOS/issues" target="_blank" rel="noopener noreferrer">Issues en GitHub</a></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <a class="footer-brand" href="#inicio">
+                <img src="images/logo.png" alt="">
+                BAIOS
+            </a>
+            <p>
+                Andago · motor bajo <a href="https://github.com/andago9/BAIOS/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">GNU GPL v3</a>.
+                Las herramientas de terceros conservan su licencia.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

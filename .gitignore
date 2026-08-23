@@ -14,3 +14,9 @@ publish/
 *.ilk
 *.log
 dist/
+
+## Third-party tools (local seed; not in git)
+src/BAIOS.App/Tools/**/*.exe
+src/BAIOS.App/Tools/**/*.zip
+src/BAIOS.App/Tools/**/*.msi
+src/BAIOS.App/Tools/**/*.7z

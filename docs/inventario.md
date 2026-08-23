@@ -4,7 +4,7 @@ Registro de trabajo: qué hay (o había) en la carpeta local de herramientas, no
 
 Este archivo **nombra** programas y evidencias. No versiona binarios, ISOs ni los ~10 GB de la carpeta local. Tras clasificar una tanda, se borra en disco lo marcado `desuso` + `borrar`; el Markdown queda como constancia.
 
-No mezclar con [backlog.md](backlog.md): el backlog sigue siendo F1–F5. Hashes, EULA y URLs oficiales viven en el catálogo cuando el programa se conserve.
+No mezclar con [backlog.md](backlog.md): producto F1–F5 (cerrado); la cola de disco es [OPS-05](backlog.md). Hashes, EULA y URLs oficiales viven en el catálogo cuando el programa se conserve.
 
 Última tanda clasificada: **notepad-16** (iconos/Pexels, «eset si / panda si», EXIF/MalwareTracker/MetaDefender, manifiesto elhacker.net, Jotti/Dr.Web).
 
