@@ -125,7 +125,9 @@ Los binarios **no van dentro de `BAIOS.exe`**. Van en `Tools/<id>/` junto al exe
 | OPS-02 | Add | Rellenar `sha256` de 64 hex en `manifest.json`. Sin hash, **Instalar / Actualizar** no descarga; se puede seguir colocando el archivo a mano (OPS-01). | pendiente |
 | OPS-03 | Add | Primera publicación 4.0: dejar de ser `4.0.0-dev`, pasar [Unreleased](changelog.md) a versión fechada. | pendiente |
 | OPS-04 | Add | Probar cada ficha del manifiesto en un PC real (lanzar, UAC, log). No reabre F3-09 ni F4-04. | pendiente |
-| OPS-05 | Change | [Inventario](inventario.md): ~50 ítems `pendiente` en la carpeta local (~10 GB). No es catálogo ni producto 4.x. | pendiente |
+| OPS-05 | Change | [Programas por revisar](programas-por-revisar.md): ~54 ítems `pendiente` (carpeta local ~10 GB y enlaces). No es catálogo ni producto 4.x. | pendiente |
+| OPS-06 | Add | Contactar a Nicolas Coolman (autor de ZHPCleaner / Top Antimalware) por el [formulario oficial](https://nicolascoolman.eu/formulaire-de-contact/). No reabre F1-03. | pendiente |
+| OPS-07 | Add | Contactar a Dragokas (HijackThis): Andago figura como traductor al español en los créditos del programa; proponer un ajuste visual. Canal: [GitHub hijackthis](https://github.com/dragokas/hijackthis). No reabre F4-05. | pendiente |
 
 ## WEB — Sitio público
 

@@ -49,7 +49,7 @@ El código de 4.0 / 4.1 / 4.2 está cerrado. Queda sembrar herramientas, hashes 
 - Rellenar `sha256` en el manifiesto para que **Instalar / Actualizar** descargue.
 - Primera release 4.0 (hoy: Unreleased / `4.0.0-dev`).
 - Validar cada herramienta en un PC real.
-- Seguir clasificando el [inventario](inventario.md) de disco.
+- Seguir clasificando [programas por revisar](programas-por-revisar.md).
 
 Backlog: **OPS**.
 

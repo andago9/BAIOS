@@ -98,7 +98,7 @@ El backlog Lite (P0–P3) está **archivado** en [backlog.md](backlog.md). No se
 | [01. Visión](vision.md) | Este archivo |
 | [02. Arquitectura](arquitectura.md) | Stack, módulos, permisos |
 | [03. Catálogo](catalogo.md) | Herramientas y vigencia |
-| [Inventario](inventario.md) | Disco local: en uso / pendiente / desuso (no es el catálogo) |
+| [Programas por revisar](programas-por-revisar.md) | Disco y enlaces: en uso / pendiente / desuso (no es el catálogo) |
 | [04. Diseño funcional](diseno-funcional.md) | Pantallas y comportamiento |
 | [05. Actualización](actualizacion.md) | Manifiesto y updates |
 | [06. Reportes](reportes.md) | Generación y exportación |

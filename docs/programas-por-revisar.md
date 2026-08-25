@@ -1,12 +1,14 @@
-# Inventario de disco
+# Programas por revisar
 
-Registro de trabajo: qué hay (o había) en la carpeta local de herramientas, no qué BAIOS declara como producto. El catálogo de fichas y vigencia es [catalogo.md](catalogo.md). Visión: [vision.md](vision.md). Créditos y autoría: [creditos.md](creditos.md).
+Registro de trabajo: programas (binarios locales y enlaces) pendientes de clasificar o ya clasificados. No es lo que BAIOS declara como producto. El catálogo de fichas y vigencia es [catalogo.md](catalogo.md). Visión: [vision.md](vision.md). Créditos y autoría: [creditos.md](creditos.md).
 
-Este archivo **nombra** programas y evidencias. No versiona binarios, ISOs ni los ~10 GB de la carpeta local. Tras clasificar una tanda, se borra en disco lo marcado `desuso` + `borrar`; el Markdown queda como constancia.
+Este archivo **nombra** programas, evidencias y URLs. No versiona binarios, ISOs ni los ~10 GB de la carpeta local. Tras clasificar una tanda, se borra en disco lo marcado `desuso` + `borrar`; el Markdown queda como constancia.
 
-No mezclar con [backlog.md](backlog.md): producto F1–F5 (cerrado); la cola de disco es [OPS-05](backlog.md). Hashes, EULA y URLs oficiales viven en el catálogo cuando el programa se conserve.
+No mezclar con [backlog.md](backlog.md): producto F1–F5 (cerrado); la cola de esta lista es [OPS-05](backlog.md). Hashes, EULA y URLs oficiales viven en el catálogo cuando el programa se conserve.
 
 Última tanda clasificada: **notepad-16** (iconos/Pexels, «eset si / panda si», EXIF/MalwareTracker/MetaDefender, manifiesto elhacker.net, Jotti/Dr.Web).
+
+Enlaces añadidos 2026-08-24: [Top Antimalware](https://nicolascoolman.eu/), [foro ZAM](https://forum.nicolascoolman.eu/), [UsbFix](https://www.usb-antivirus.com/fr/), [SOSVirus](https://www.sosvirus.net/).
 
 ## Leyenda
 
@@ -23,7 +25,7 @@ Conteos de filas clasificadas (no incluye bandeja ni el apartado «no son progra
 | Estado | Ítems |
 | --- | --- |
 | en_uso | 12 |
-| pendiente | 50 |
+| pendiente | 54 |
 | desuso | 79 |
 | duplicado | 39 |
 
@@ -38,7 +40,7 @@ Lo que el prototipo lanza o que 4.0/4.1 conservará. Los online **no son binario
 | HijackThis | historial repo 2.9.0.26 fab. 05/08/2020 Act. BAIOS 19/08/2021 | en_uso | conservar | sí | notepad-01 | 4.1+; alerta de falsos positivos. Créditos también 2.9.0.18 y 2.10.0.14. |
 | HitmanPro | historial repo 3.8.23 Act. BAIOS 19/08/2021 (sin fecha fabricante) | en_uso | conservar | sí | notepad-01 | 4.1+; prueba ~30 días. Créditos también 3.8.16. |
 | Kaspersky VRT | historial repo 20.0.8.0 fab. 19/08/2021 Act. BAIOS 19/08/2021 | en_uso | conservar | sí | notepad-01 | 4.1+. Créditos también 15.0.22.0. No confundir con el instalador ni Rescue CD. |
-| ZHPCleaner | historial repo 2021.8.24.323 fab. 24/08/2021 | en_uso | conservar | sí | notepad-01 | 4.1+. Descarga solo nicolascoolman (.eu / .com). |
+| ZHPCleaner | historial repo 2021.8.24.323 fab. 24/08/2021; <https://nicolascoolman.eu/> | en_uso | conservar | sí | notepad-01 | 4.1+. Descarga solo el sitio del autor ([nicolascoolman.eu](https://nicolascoolman.eu/) / .com). El resto de la familia ZHP va en pendiente. |
 | Spybot Search & Destroy | ficha 11; 2.7.64.0; 31/3/2020; Baios 05/jan/2021 (notepad-04) | en_uso | conservar | sí | notepad-01 | 4.1+. Notepad-02 lo marca «no portable». La carpeta Beta es el mismo producto. |
 | Emsisoft Emergency Kit | ficha 10; 2020.3.2.10048; remediation-kit (notepad-02/08) | en_uso | conservar | sí | notepad-01 | 4.1+. El hub «remediation-kit» es la misma familia, no otro producto. |
 | ESET Online Scanner | 21. Eset Online; notepad-16: «eset si» | en_uso | conservar | sí | notepad-01 | Enlace Técnico (F1-06). Confirmado en notas. No guardar instalador ni ISO. |
@@ -48,7 +50,7 @@ Lo que el prototipo lanza o que 4.0/4.1 conservará. Los online **no son binario
 
 ## Pendiente de revisión
 
-Aparece en notas o en disco; vigencia o utilidad dudosa. No borrar de los 10 GB hasta cerrar F1.
+Aparece en notas, en disco o como enlace; vigencia o utilidad dudosa. No borrar de los 10 GB hasta revisarlo.
 
 | Nombre | Evidencia | Estado | Acción | Catálogo | Origen | Nota |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -57,7 +59,11 @@ Aparece en notas o en disco; vigencia o utilidad dudosa. No borrar de los 10 GB 
 | SpyShelter | spyshelter.com (anotado junto a bitdefender) | pendiente | revisar | ficha nueva | notepad-01 | No está en el catálogo. No es Bitdefender. |
 | SUPERAntiSpyware | 13. SUPERAntiSpyware; free-edition.html (notepad-03) | pendiente | revisar | ficha nueva | notepad-01 | No está en el catálogo ni en el menú v3 documentado. |
 | SpywareBlaster | 18. SpywareBlaster; brightfort.com (notepad-03) | pendiente | revisar | ficha nueva | notepad-01 | No está en el catálogo. |
-| USBAV | 19. USBAV; usbavfree.com (notepad-03) | pendiente | revisar | ficha nueva | notepad-01 | Confirma producto. ¿Distinto de Sophos SBAV (LiveCD)? |
+| USBAV | 19. USBAV; usbavfree.com (notepad-03) | pendiente | revisar | ficha nueva | notepad-01 | Confirma producto. ¿Distinto de Sophos SBAV (LiveCD)? Distinto de UsbFix (usb-antivirus.com). |
+| UsbFix | <https://www.usb-antivirus.com/fr/> (SOSVirus, 2026) | pendiente | revisar | ficha nueva | enlaces | Portable USB/SD (Francia). Distinto de USBAV (usbavfree.com) y de Panda USB Vaccine. No guardar binario hasta revisarlo. |
+| Familia ZHP extra | <https://nicolascoolman.eu/> (ZHPSuite, ZHPDiag, ZHPFix, ZHPLite, ZHPScript, ZHPHelp) | pendiente | revisar | ficha nueva | enlaces | El 4.1+ es solo ZHPCleaner. El resto de Top Antimalware / ZAM no entra hasta revisarlo. Soporte en el foro. |
+| Foro Nicolas Coolman | <https://forum.nicolascoolman.eu/> (ZAM; activo 2026-08) | pendiente | revisar | no | enlaces | Foro de asistencia (desinfección, Windows, ZHPCleaner, ZHPSuite). Bookmark / comunidad, no binario. No copiar hilos al repo. |
+| Logithèque SOSVirus | <https://www.sosvirus.net/> | pendiente | revisar | ficha nueva | enlaces | Hub (UsbFix, Bitdefender, Malwarebytes, CCleaner…). CCleaner ya desuso; UsbFix tiene fila. No copiar la logithèque al disco. |
 | Argente Utilities | 20. Argente Utilities; infospyware (notepad-02) | pendiente | revisar | ficha nueva | notepad-01 | Utilidades, no antimalware. Probable fuera de BAIOS 4. |
 | F-Secure Online Scanner | 22. F Secure; f-secure.com/es/free-tools (notepad-02) | pendiente | revisar | ficha nueva | notepad-01 | Escáner / hub de herramientas gratis. |
 | Trend Micro HouseCall | 24. Trend; free-tools.html (notepad-02) | pendiente | revisar | ficha nueva | notepad-01 | Online. En catálogo Trend solo aparece como Rescue Disk (4.2+). |
@@ -304,7 +310,7 @@ Lanzadores locales. Preferible enlace en Técnico, no el `.exe` viejo.
 
 `BAIOS.exe` 6.86 MB, `BAIOS.cdd` 2.86 MB, `Buttons/`, `Icons/`, `Images/`, `debug.log`: prototipo v2. No versionar en Git. Conservar fuera del repo si hace falta arqueología; no forma parte de los 10 GB de motores.
 
-Docs ahí (`CHANGELOG.txt`, `Creditos.txt`, `Detalles de Software.txt`, `00. ANTIVIRUS.txt/.xlsx`): ya consolidados en [changelog.md](changelog.md), [creditos.md](creditos.md), [catalogo.md](catalogo.md) y este inventario. No hace falta el xlsx en disco.
+Docs ahí (`CHANGELOG.txt`, `Creditos.txt`, `Detalles de Software.txt`, `00. ANTIVIRUS.txt/.xlsx`): ya consolidados en [changelog.md](changelog.md), [creditos.md](creditos.md), [catalogo.md](catalogo.md) y este documento. No hace falta el xlsx en disco.
 
 ## Referencias (no son programas)
 
@@ -321,6 +327,10 @@ Bookmarks de labs, rankings y blogs. No lanzan nada; no ocupan ficha. Si hay cap
 - Hiren's (notepad-05): `youtube.be/1AoJJ5YbkzQ` es un vídeo, no una ISO oficial. No sustituye fuente de fabricante.
 - Consolidar changelog / créditos / README (notepad-12): ya hecho en [changelog.md](changelog.md), [creditos.md](creditos.md) y [README.md](../README.md). El flujo AutoPlay (bienvenida → acuerdo → menú Portables/Ejecutables/Online, «desactivar Defender») es herencia v2; no se restaura. Defender no se apaga.
 - Tutoriales (notepad-14): modo seguro, BSOD, hosts, cheat sheets, guías AVZ/OTL/Procmon. Son documentación externa, no binarios. No copiar foros enteros al repo.
+- Top Antimalware / Zone Anti-Malware (2026-08-24): <https://nicolascoolman.eu/> — sitio del autor de ZHPCleaner; noticias y logithèque. Ver fila «Familia ZHP extra». No copiar artículos al repo.
+- Foro Nicolas Coolman / ZAM (2026-08-24): <https://forum.nicolascoolman.eu/> — asistencia gratuita, soporte ZHP y FAQ. Ver fila pendiente. No copiar el foro al repo.
+- UsbFix (2026-08-24): <https://www.usb-antivirus.com/fr/> — web oficial del portable USB (SOSVirus). Ver fila pendiente.
+- SOSVirus (2026-08-24): <https://www.sosvirus.net/> — asistencia y logithèque. Partner de UsbFix. Bookmarks, no binarios.
 - Manifiesto Staff elhacker.net (notepad-16): pack de foro (XP–W10, móvil, forense, LiveCD, stego, drivers). **No es la visión BAIOS 4** ([vision.md](vision.md)). Windows 9 no existe; XP no entra.
 - Assets UI (notepad-16): IconArchive (iconsmind), Pexels, Radial Chart Image Generator. Diseño, no kit. Atribución si se usaron: [creditos.md](creditos.md) (hoy Flaticon).
 

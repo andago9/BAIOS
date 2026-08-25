@@ -2,7 +2,7 @@
 
 Herramientas que BAIOS declara, lanza o (desde 4.1) actualiza por manifiesto. BAIOS **no las reemplaza**. Visión: [vision.md](vision.md).
 
-Inventario de disco (binarios locales): [inventario.md](inventario.md). No mezclar con este catálogo.
+Programas por revisar (disco y enlaces): [programas-por-revisar.md](programas-por-revisar.md). No mezclar con este catálogo.
 
 Fuente histórica: [`archive/Detalles de Software.html`](archive/Detalles%20de%20Software.html), [`archive/Creditos.md`](archive/Creditos.md) y notepads de créditos (~marzo 2020, AIO 2021-08-19 y AIO 2022-01-05), fusionados en [créditos](creditos.md). Si el notepad cita otra versión, se anota como **versión en créditos**; no sustituye la ficha. Las URLs de McAfee copiadas por error en fichas ajenas **no se usan**.
 
