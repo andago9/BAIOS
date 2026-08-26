@@ -27,7 +27,7 @@ $shell = New-Object -ComObject WScript.Shell
 $shortcut = $shell.CreateShortcut($shortcutPath)
 $shortcut.TargetPath = Join-Path $dest "BAIOS.exe"
 $shortcut.WorkingDirectory = $dest
-$shortcut.Description = "BAIOS — Blinter All In One Security"
+$shortcut.Description = "BAIOS - Blinter All In One Security"
 $icon = Join-Path $dest "BAIOS.exe"
 $shortcut.IconLocation = "$icon,0"
 $shortcut.Save()
