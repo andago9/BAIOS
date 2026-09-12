@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Presentación de BAIOS (Blinter All In One Security): orquesta diagnóstico, seguridad y mantenimiento en Windows.">
+    <meta name="author" content="Andago">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <title>Presentación — BAIOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/presentacion.css?v=3" rel="stylesheet">
+</head>
+<body>
+    <div class="deck" id="deck" role="region" aria-roledescription="presentación" aria-label="Presentación de BAIOS">
+
+        <section class="slide slide--cover is-active" data-slide="1" aria-label="Portada">
+            <div class="slide-inner slide-inner--center">
+                <img class="cover-logo" src="../images/logo.png" alt="BAIOS">
+                <h1>BAIOS</h1>
+                <p class="cover-name">Blinter All In One Security</p>
+                <p class="cover-tag">Security &amp; Diagnostic Toolkit para Windows</p>
+                <p class="cover-meta">Versión 4 · Un motor, dos modos</p>
+            </div>
+        </section>
+
+        <section class="slide" data-slide="2" aria-label="El problema">
+            <div class="slide-inner">
+                <p class="kicker">El problema</p>
+                <h2>Un PC Windows, muchas preguntas</h2>
+                <p class="lead">Un técnico o un usuario necesita, en una sola pasada, ver el estado del equipo y dejar constancia.</p>
+                <ul class="grid-list">
+                    <li><i class="fa fa-shield" aria-hidden="true"></i> ¿Defender y el firewall están activos?</li>
+                    <li><i class="fa fa-microchip" aria-hidden="true"></i> Inventario de hardware y estado de disco</li>
+                    <li><i class="fa fa-wifi" aria-hidden="true"></i> Red: IP, DNS, conectividad</li>
+                    <li><i class="fa fa-wrench" aria-hidden="true"></i> Limpieza y reparación básicas</li>
+                    <li><i class="fa fa-search" aria-hidden="true"></i> Segunda opinión antimalware cuando haga falta</li>
+                    <li><i class="fa fa-file-text-o" aria-hidden="true"></i> Un reporte para llevarse</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="slide" data-slide="3" aria-label="Qué es BAIOS">
+            <div class="slide-inner">
+                <p class="kicker">Qué es</p>
+                <h2>Un centro de operaciones, no un antivirus más</h2>
+                <p class="lead">BAIOS orquesta diagnóstico, seguridad y mantenimiento del equipo. Lee el estado, lanza herramientas propias o de terceros, interpreta resultados y genera un reporte por sesión.</p>
+                <div class="cards cards--3">
+                    <article class="card">
+                        <i class="fa fa-cogs" aria-hidden="true"></i>
+                        <h3>Orquesta</h3>
+                        <p>No compite con los motores: los usa y deja constancia.</p>
+                    </article>
+                    <article class="card">
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                        <h3>Un motor</h3>
+                        <p>Mismo núcleo para hogar y técnico. Distinta densidad de detalle.</p>
+                    </article>
+                    <article class="card">
+                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                        <h3>Un reporte</h3>
+                        <p>OK, aviso o fallo, con recomendaciones al cierre de la sesión.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" data-slide="4" aria-label="Qué no es">
+            <div class="slide-inner">
+                <p class="kicker">Qué no es</p>
+                <h2>Límites claros</h2>
+                <p class="lead">BAIOS no sustituye el software que ya protege el equipo. Orquesta; no reemplaza.</p>
+                <ul class="not-list">
+                    <li><strong>No es un antivirus.</strong> No sustituye Microsoft Defender ni otros motores residentes.</li>
+                    <li><strong>No reimplementa</strong> AdwCleaner, Autoruns ni el resto de herramientas de terceros.</li>
+                    <li><strong>No es una ISO masiva</strong> de ejecutables embebidos que hay que recompilar cada vez.</li>
+                    <li><strong>No hay edición empresarial.</strong> Un motor, dos modos: Hogar y Técnico.</li>
+                    <li><strong>No es un LiveCD</strong> en 4.0. Rescue llega después, solo con enlaces oficiales.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="slide" data-slide="5" aria-label="Un motor, dos modos">
+            <div class="slide-inner">
+                <p class="kicker">Modos</p>
+                <h2>Un motor, dos modos</h2>
+                <p class="lead">El mismo BAIOS.exe. Cambia lo que se muestra, no el núcleo.</p>
+                <div class="cards cards--2">
+                    <article class="card card--mode">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <h3>Hogar</h3>
+                        <p>Usuario doméstico. Dashboard claro, alertas y acciones seguras. Pocas herramientas externas.</p>
+                    </article>
+                    <article class="card card--mode">
+                        <i class="fa fa-terminal" aria-hidden="true"></i>
+                        <h3>Técnico</h3>
+                        <p>Técnico de sistemas. El mismo motor, más detalle y un flujo guiado USB/PC hasta el reporte.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" data-slide="6" aria-label="Flujo de trabajo">
+            <div class="slide-inner">
+                <p class="kicker">Flujo</p>
+                <h2>De conectar a dejar constancia</h2>
+                <p class="lead">El recorrido objetivo de una sesión.</p>
+                <ol class="flow">
+                    <li><span>1</span> Conecta BAIOS</li>
+                    <li><span>2</span> Diagnóstico</li>
+                    <li><span>3</span> Seguridad</li>
+                    <li><span>4</span> Hardware</li>
+                    <li><span>5</span> Red</li>
+                    <li><span>6</span> Mantenimiento</li>
+                    <li><span>7</span> Reporte</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="slide" data-slide="7" aria-label="Módulos nativos">
+            <div class="slide-inner">
+                <p class="kicker">Motor 4.0</p>
+                <h2>Módulos nativos</h2>
+                <p class="lead">Lo que hace el propio BAIOS, sin depender de un portable.</p>
+                <div class="cards cards--3">
+                    <article class="card">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                        <h3>Inicio</h3>
+                        <p>Windows Update, Defender, firewall, disco, RAM/CPU y alertas.</p>
+                    </article>
+                    <article class="card">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <h3>Seguridad</h3>
+                        <p>Estado y análisis de Microsoft Defender (rápido, completo u offline).</p>
+                    </article>
+                    <article class="card">
+                        <i class="fa fa-stethoscope" aria-hidden="true"></i>
+                        <h3>Diagnóstico</h3>
+                        <p>Hardware, SMART si es accesible, servicios, procesos, inicio y drivers.</p>
+                    </article>
+                    <article class="card">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                        <h3>Mantenimiento</h3>
+                        <p>Temporales, cachés, papelera; DISM/SFC con confirmación. CHKDSK solo advertido.</p>
+                    </article>
+                    <article class="card">
+                        <i class="fa fa-sitemap" aria-hidden="true"></i>
+                        <h3>Red</h3>
+                        <p>IP, DNS, gateway, ping, tracert, flush DNS y renovar DHCP.</p>
+                    </article>
+                    <article class="card">
+                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        <h3>Reportes</h3>
+                        <p>Un informe por sesión en texto o HTML: OK, aviso o fallo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" data-slide="8" aria-label="Herramientas que lanza">
+            <div class="slide-inner">
+                <p class="kicker">Herramientas</p>
+                <h2>Lanza, no reemplaza</h2>
+                <p class="lead">En 4.0 se lanzan copias locales o descargadas por el usuario. Actualización por manifiesto: 4.1.</p>
+                <div class="cards cards--3">
+                    <article class="card">
+                        <i class="fa fa-bug" aria-hidden="true"></i>
+                        <h3>AdwCleaner</h3>
+                        <p>Malwarebytes. Cuarentena de PUP y adware. No borrar a ciegas.</p>
+                    </article>
+                    <article class="card">
+                        <i class="fa fa-medkit" aria-hidden="true"></i>
+                        <h3>Safety Scanner</h3>
+                        <p>Microsoft MSERT. Segunda opinión. El binario caduca ~10 días.</p>
+                    </article>
+                    <article class="card">
+                        <i class="fa fa-list-alt" aria-hidden="true"></i>
+                        <h3>Autoruns</h3>
+                        <p>Sysinternals. Inventario de autostart. No deshabilitar entradas de Microsoft sin saber qué son.</p>
+                    </article>
+                </div>
+                <p class="footnote">Cada fabricante conserva su licencia y su EULA. El uso es bajo responsabilidad del usuario.</p>
+            </div>
+        </section>
+
+        <section class="slide" data-slide="9" aria-label="Principios">
+            <div class="slide-inner">
+                <p class="kicker">Principios</p>
+                <h2>Cómo se decide el producto</h2>
+                <ul class="principle-list">
+                    <li><strong>Orquestar, no reemplazar.</strong> Defender y los portables siguen siendo de sus fabricantes.</li>
+                    <li><strong>Motor nativo primero;</strong> las herramientas externas después.</li>
+                    <li><strong>Probar cada herramienta</strong> antes de incluirla en el catálogo.</li>
+                    <li><strong>Mostrar fabricante, versión, EULA,</strong> arquitectura y si requiere administrador.</li>
+                    <li><strong>Advertir falsos positivos.</strong> No borrar archivos de sistema a ciegas.</li>
+                    <li><strong>Un reporte por sesión,</strong> con OK / aviso / fallo y recomendaciones.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="slide" data-slide="10" aria-label="Recomendaciones">
+            <div class="slide-inner">
+                <p class="kicker">Buenas prácticas</p>
+                <h2>Recomendaciones</h2>
+                <p class="lead">Las mismas reglas de siempre, alineadas con BAIOS 4.</p>
+                <div class="cards cards--2">
+                    <article class="card">
+                        <i class="fa fa-pause-circle-o" aria-hidden="true"></i>
+                        <h3>Uno al tiempo</h3>
+                        <p>No se aconsejan dos antivirus residentes activos a la vez. BAIOS no desactiva Defender.</p>
+                    </article>
+                    <article class="card">
+                        <i class="fa fa-ban" aria-hidden="true"></i>
+                        <h3>Nunca a ciegas</h3>
+                        <p>No elimines archivos del sistema ni cuarentenas si no estás seguro de qué son.</p>
+                    </article>
+                    <article class="card">
+                        <i class="fa fa-database" aria-hidden="true"></i>
+                        <h3>BACKUP</h3>
+                        <p>Respalda la información, en la nube o en un medio físico, antes de limpiar o reparar.</p>
+                    </article>
+                    <article class="card">
+                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        <h3>Estar alerta</h3>
+                        <p>Ante la duda, no sigas. Si el sitio o el archivo no es de confianza, detente.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" data-slide="11" aria-label="Licencia">
+            <div class="slide-inner">
+                <p class="kicker">Software libre</p>
+                <h2>Licencia</h2>
+                <div class="cards cards--2">
+                    <article class="card card--mode">
+                        <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                        <h3>Motor BAIOS</h3>
+                        <p>Se publica bajo <strong>GNU GPL v3</strong>. El código está en GitHub. Windows x64, .NET 8 + WPF.</p>
+                    </article>
+                    <article class="card card--mode">
+                        <i class="fa fa-files-o" aria-hidden="true"></i>
+                        <h3>Herramientas de terceros</h3>
+                        <p>Conservan su propia licencia y su EULA. BAIOS las declara, las lanza y no las reimplementa.</p>
+                    </article>
+                </div>
+                <p class="footnote">No hay edición empresarial ni está prevista.</p>
+            </div>
+        </section>
+
+        <section class="slide slide--cover" data-slide="12" aria-label="Cierre">
+            <div class="slide-inner slide-inner--center">
+                <img class="cover-logo cover-logo--sm" src="../images/logo.png" alt="">
+                <h2 class="cover-close">¿Alguna sugerencia?</h2>
+                <p class="cover-name">Andago · BAIOS</p>
+                <p class="cover-contact">
+                    <a href="mailto:blinter.baios@gmail.com">blinter.baios@gmail.com</a>
+                </p>
+                <p class="cover-contact">
+                    <a href="https://github.com/andago9/BAIOS" target="_blank" rel="noopener noreferrer">github.com/andago9/BAIOS</a>
+                </p>
+                <p class="cover-meta">Motor bajo GNU GPL v3 · Las herramientas de terceros conservan su licencia</p>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="chrome" aria-hidden="false">
+        <div class="chrome-progress" aria-hidden="true"><span id="progress"></span></div>
+        <div class="chrome-bar">
+            <a class="chrome-home" href="../index.html">Inicio</a>
+            <button type="button" class="chrome-btn" id="prev" aria-label="Diapositiva anterior">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <p class="chrome-count" id="count" aria-live="polite">1 / 12</p>
+            <button type="button" class="chrome-btn" id="next" aria-label="Diapositiva siguiente">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="chrome-btn chrome-btn--print" id="print" title="Exportar PDF (P)">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Exportar PDF
+            </button>
+        </div>
+        <ol class="chrome-dots" id="dots" aria-label="Índice de diapositivas"></ol>
+    </div>
+
+    <script src="js/presentacion.js"></script>
+</body>
+</html>
